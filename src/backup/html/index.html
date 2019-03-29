@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Repik-kot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--  CSS stylesheets-->
+    <link rel="stylesheet" type="text/css" media="all" href="styles/viktoriya.css">
+    <!-- Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ribeye:400,700,300" type="text/css">
+    <!--  icons-->
+  </head>
+  <style></style>
+</html>
+<body>
+  <!-- Start header block-->
+  <header>
+    <div class="panel-logo">
+      <div class="name-service-wrap">
+        <div class="name-service">Repik-cat</div>
+      </div>
+      <div class="logo-wrap"><img src="./images/logo.png" alt="Logo Repik-kot project"></div>
+    </div>
+    <div class="promo-block"><img src="./images/header_image.png" alt="Promo image the Repik-kot project" srcset=""></div>
+    <div class="heading-service-wrap">
+      <div class="heading-service">
+        <h2 class="name-service">Repikcat -</h2>
+        <p class="text-center">сэрвіс для пошуку рэпетытараў</p>
+      </div>
+    </div>
+  </header>
+  <!-- End header block-->
+  <!-- Start main block-->
+  <main>
+    <!-- Navigation brow-->
+    <div class="content">
+      <div class="section background-dark">
+        <div class="container text-center">
+          <h2 class="text-md text-white">Усе даступныя рэпетытары</h2>
+        </div>
+      </div>
+      <div class="top-repetitors-block">
+        <aside>
+          <div class="filter-panel-wrap">
+            <h2 class="text-md text-center">Фільтр для пошуку рэпетытараў:</h2>
+            <div class="filter-panel">
+              <div class="checkboxes-block">
+                <h3 class="text-sm">Статус выкладніка</h3>
+                <div class="checkbox">
+                  <input id="checkbox1" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox1">Прыватны выкладнік</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox2" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox2">Доктар навук</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox3" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox3">Школьны настаўнік</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox4" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox4">Выкладнік коледжа</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox5" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox5">Выкладнік ВНУ</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox6" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox6">Навуковы супрацоўнік</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox7" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox7">Студэнт</label>
+                </div>
+              </div>
+              <div class="checkboxes-block">
+                <h3 class="text-sm">Пол преподователя</h3>
+                <div class="checkbox">
+                  <input id="checkbox8" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox8">Мужчынскі</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox9" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox9">Жаночы</label>
+                </div>
+              </div>
+              <div class="checkboxes-block">
+                <h3 class="text-sm"> Адукацыя выкладніка</h3>
+                <div class="checkbox">
+                  <input id="checkbox10" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox10">Сярэднее</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox11" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox11">Сярэдне-адмысловае</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox12" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox12">Найвышэйшае</label>
+                </div>
+              </div>
+              <div class="checkboxes-block">
+                <h3 class="text-sm">Наяўнасць навуковай ступені</h3>
+                <div class="checkbox">
+                  <input id="checkbox13" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox13">Есць</label>
+                </div>
+              </div>
+              <div class="checkboxes-block">
+                <h3 class="text-sm">Месца заняткаў</h3>
+                <div class="checkbox">
+                  <input id="checkbox14" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox14"> У вучня</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox15" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox15"> У рэпетытара</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox16" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox16">Дыстанцыйна</label>
+                </div>
+              </div>
+              <div class="checkboxes-block">
+                <h3 class="text-sm">Мэта занятку</h3>
+                <div class="checkbox">
+                  <input id="checkbox17" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox17"> Дапамога па праграме</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox18" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox18">Рыхтоўля да ОГЭ</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox19" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox19"> Рыхтоўля да АДЭ</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox20" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox20">Рыхтоўля да алімпіяд</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox21" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox21">Рыхтоўля да ДВИ</label>
+                </div>
+              </div>
+              <div class="checkboxes-block">
+                <h3 class="text-sm">Працягласць занятку</h3>
+                <div class="checkbox">
+                  <input id="checkbox22" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox22"> 30 хвілін</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox23" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox23">60 хвілін</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox24" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox24">90 хвілін</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox25" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox25">120 хвілін</label>
+                </div>
+              </div>
+              <div class="checkboxes-block">
+                <h3 class="text-sm">Тып занятку</h3>
+                <div class="checkbox">
+                  <input id="checkbox26" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox26">Індывідуальна</label>
+                </div>
+                <div class="checkbox">
+                  <input id="checkbox27" name="keywords" type="checkbox" value="">
+                  <label class="text-gray" for="checkbox27">У групе</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="repetitors-preview">
+          <h2 class="text-lg text-black"> Топ 3 рэпетытараў</h2>
+          <div class="repetitor-wrap">
+            <div class="avatar-wrap"><img src="" alt="Repetitor $(FIO)" srcset=""></div>
+            <div class="repetitor-info-wrap">
+              <h3 class="text-md text-white">Захар Артемьевич</h3>
+              <div class="info-about-repetitor">
+                <div class="goal">
+                  <p>Мэта:</p><span class="text-primary">Дапамога па праграме</span>
+                  <p>Прадметы:</p><span class="text-primary">Ангельская мова</span>
+                  <p>Тып занятку:</p><span class="text-primary">Iндывидуальна</span>
+                </div>
+                <div class="classes">
+                  <h4 class="text-sm text-white">Кошт занятку</h4>
+                  <div class="spaces-wrap">
+                    <div class="space"><span class="text-xs">У вучня:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                    <div class="space"><span class="text-xs">У рэпетытара:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                    <div class="space"><span class="text-xs">Дыстанцыйна:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                  </div>
+                  <div class="buttons-panel">
+                    <button class="button button-outlined">Дэталёвей ▼</button>
+                    <button class="button button-primary">Звязацца</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repetitor-wrap">
+            <div class="avatar-wrap"><img src="" alt="Repetitor $(FIO)" srcset=""></div>
+            <div class="repetitor-info-wrap">
+              <h3 class="text-md text-white">Захар Артемьевич</h3>
+              <div class="info-about-repetitor">
+                <div class="goal">
+                  <p>Мэта:</p><span class="text-primary">Дапамога па праграме</span>
+                  <p>Прадметы:</p><span class="text-primary">Ангельская мова</span>
+                  <p>Тып занятку:</p><span class="text-primary">Iндывидуальна</span>
+                </div>
+                <div class="classes">
+                  <h4 class="text-sm text-white">Кошт занятку</h4>
+                  <div class="spaces-wrap">
+                    <div class="space"><span class="text-xs">У вучня:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                    <div class="space"><span class="text-xs">У рэпетытара:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                    <div class="space"><span class="text-xs">Дыстанцыйна:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                  </div>
+                  <div class="buttons-panel">
+                    <button class="button button-outlined">Дэталёвей ▼</button>
+                    <button class="button button-primary">Звязацца</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repetitor-wrap">
+            <div class="avatar-wrap"><img src="" alt="Repetitor $(FIO)" srcset=""></div>
+            <div class="repetitor-info-wrap">
+              <h3 class="text-md text-white">Захар Артемьевич</h3>
+              <div class="info-about-repetitor">
+                <div class="goal">
+                  <p>Мэта:</p><span class="text-primary">Дапамога па праграме</span>
+                  <p>Прадметы:</p><span class="text-primary">Ангельская мова</span>
+                  <p>Тып занятку:</p><span class="text-primary">Iндывидуальна</span>
+                </div>
+                <div class="classes">
+                  <h4 class="text-sm text-white">Кошт занятку</h4>
+                  <div class="spaces-wrap">
+                    <div class="space"><span class="text-xs">У вучня:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                    <div class="space"><span class="text-xs">У рэпетытара:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                    <div class="space"><span class="text-xs">Дыстанцыйна:</span>
+                      <div class="coast"><span class="text-primary">15 р.</span><span>(60мin)</span></div>
+                    </div>
+                  </div>
+                  <div class="buttons-panel">
+                    <button class="button button-outlined">Дэталёвей ▼</button>
+                    <button class="button button-primary">Звязацца</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sale-block-wrap">
+        <div class="message-text">
+          <h2 class="text-center text-md">Пакінь свой email і атрымай зніжку 15%</h2>
+        </div>
+        <div class="input-wrap">
+          <div class="input">
+            <input id="name" placeholder="ВАШ ЕМЕЙЛ" type="text">
+          </div>
+          <div class="button-wrap">
+            <button>→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
