@@ -1,12 +1,11 @@
-<div class="checkboxes-block">
-	<h6>Пол преподователя:</h6>
-	{#each sexes as sx, i}
-	<div class="checkbox">
-		<input bind:group={sex} value={sx} id="checkbox8" name="keywords" type="checkbox">
-		<label class="text-gray" for="checkbox8">{sx}</label>
-	</div>
-	{/each}
-</div>
+<h3 class="text-sm">Пол преподователя:</h3>
+
+{#each sexes as sx, i}
+<label class="control control--checkbox">{sx}
+	<input bind:group={sex} value={sx} type="checkbox" checked="checked" />
+	<div class="control__indicator"></div>
+</label>
+{/each}
 
 
 
@@ -17,3 +16,7 @@
 
 		export let sex = [];
 </script>
+
+
+<style>
+</style>

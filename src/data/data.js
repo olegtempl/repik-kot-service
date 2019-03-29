@@ -127,8 +127,8 @@ export function filter({
 		.filter(d => !degree.length || degree.includes(d.educationDegree))
 		.filter(d => !education.length || education.includes(d.educationalInfo))
 		.filter(d => !goal.length || goal.includes(d.goal.text))
-	// .filter(d => !type.length || type.includes(d.goal.type))
-	// .filter(d => !place.length || place.includes(d.place))
+		.filter(d => !type.length || type.includes(d.goal.type))
+		.filter(d => !place.length || place.includes(d.placeOfEmployment))
 	// .filter(d => !name.length || d.personalInfo.firstName.toLowerCase().includes(personalInfo.firstName.toLowerCase()))
 	// .filter(d => !subject.length || d.subject.toLowerCase() === subject.toLowerCase());
 	// console.log(res);

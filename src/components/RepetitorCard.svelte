@@ -1,10 +1,15 @@
 <div>
 	<h5>{personalInfo.firstName}</h5>
 	<!-- <b>{subject}</b> -->
+	<p>{personalInfo.lastName}</p>
+	<!-- <p>{personalInfo.otherInfo}</p> -->
 	<p>{personalInfo.status}</p>
 	<p>{personalInfo.sex}</p>
 	<p>{ goal.text}</p>
 	<p>{ goal.type}</p>
+	<p>{ placeOfEmployment}</p>
+	<p>{contacts.phone} </p>
+
 	<!-- <h5>{personalInfo.firstName}</h5>
 	<b>{subject}</b>
 	<p>{personalInfo.status}</p>

@@ -1,17 +1,28 @@
-<div class="checkboxes-block">
+<!-- <div class="checkboxes-block">
 	<h3 class="text-sm">Тып занятку</h3>
+	{#each typeEmployment as tt, i}
 	<div class="checkbox">
-		<input id="checkbox26" name="keywords" type="checkbox" value="">
-		<label class="text-gray" for="checkbox26">Індывідуальна</label>
+		<input bind:group={type} id="checkbox1" name="keywords" type="checkbox" value={tt}>
+		<label class="text-gray" for="checkbox1">{tt}</label>
 	</div>
-	<div class="checkbox">
-		<input id="checkbox27" name="keywords" type="checkbox" value="">
-		<label class="text-gray" for="checkbox27">У групе</label>
-	</div>
-</div>
+	{/each}
+</div> -->
+
+<h3 class="text-sm">Тып занятку</h3>
+
+
+{#each typeEmployment as tt, i}
+<label class="control control--checkbox">{tt}
+	<input bind:group={type} value={tt} type="checkbox" checked="checked" />
+	<div class="control__indicator"></div>
+</label>
+{/each}
+
 
 
 <script>
-		import { statuses } from "./../../data/checkboxAttributes";
-		export let status = [];
+		import { typeEmployment } from "./../../data/checkboxAttributes";
+		export let type = [];
 </script>
+
+

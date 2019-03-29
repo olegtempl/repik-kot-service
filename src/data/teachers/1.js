@@ -60,10 +60,10 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: faker.lorem.paragraphs(),
     firstName: 'Яугения',
     // firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
+    lastName: 'Фокина',
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),

@@ -1,21 +1,15 @@
-<div class="checkboxes-block">
-	<h3 class="text-sm">Месца заняткаў</h3>
-	<div class="checkbox">
-		<input id="checkbox14" name="keywords" type="checkbox" value="">
-		<label class="text-gray" for="checkbox14"> У вучня</label>
-	</div>
-	<div class="checkbox">
-		<input id="checkbox15" name="keywords" type="checkbox" value="">
-		<label class="text-gray" for="checkbox15"> У рэпетытара</label>
-	</div>
-	<div class="checkbox">
-		<input id="checkbox16" name="keywords" type="checkbox" value="">
-		<label class="text-gray" for="checkbox16">Дыстанцыйна</label>
-	</div>
-</div>
+<h3 class="text-sm">Месца заняткаў</h3>
+
+{#each placeOfEmployment as pt, i}
+<label class="control control--checkbox">{pt}
+	<input bind:group={place} value={pt} type="checkbox" checked="checked" />
+	<div class="control__indicator"></div>
+</label>
+{/each}
 
 
 <script>
-		import { statuses } from "./../../data/checkboxAttributes";
-		export let status = [];
+		import { placeOfEmployment } from "./../../data/checkboxAttributes";
+		export let place = [];
 </script>
+

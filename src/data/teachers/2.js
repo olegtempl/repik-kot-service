@@ -63,7 +63,7 @@ export const teacherInfo = {
     otherInfo: faker.lorem.paragraph(),
     firstName: 'Максiм',
     // firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
+    lastName: 'Баранов',
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),
