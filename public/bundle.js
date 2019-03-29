@@ -483,12 +483,12 @@ var app = (function () {
 	function add_css() {
 		var style = element("style");
 		style.id = 'svelte-ypqeir-style';
-		style.textContent = "div.svelte-ypqeir{width:150px;float:left;border:1px solid lightgray;border-radius:3px;padding:0 10px;margin:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVwZXRpdG9yQ2FyZC5zdmVsdGUiLCJzb3VyY2VzIjpbIlJlcGV0aXRvckNhcmQuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxkaXY+XG5cdDxoNT57cGVyc29uYWxJbmZvLmZpcnN0TmFtZX08L2g1PlxuXHQ8IS0tIDxiPntzdWJqZWN0fTwvYj4gLS0+XG5cdDxwPntwZXJzb25hbEluZm8uc3RhdHVzfTwvcD5cblx0PHA+e3BlcnNvbmFsSW5mby5zZXh9PC9wPlxuXHQ8cD57IGdvYWwudGV4dH08L3A+XG5cdDxwPnsgZ29hbC50eXBlfTwvcD5cblx0PCEtLSA8aDU+e3BlcnNvbmFsSW5mby5maXJzdE5hbWV9PC9oNT5cblx0PGI+e3N1YmplY3R9PC9iPlxuXHQ8cD57cGVyc29uYWxJbmZvLnN0YXR1c308L3A+XG5cdDxwPntzZXh9PC9wPiAtLT5cbjwvZGl2PlxuXG48c2NyaXB0PlxuXHQvLyBleHBvcnQgbGV0IG5hbWUgPSBcIlwiLFxuXHQvLyAgIHN1YmplY3QgPSBcIlwiLFxuXHQvLyAgIHN0YXR1cyA9IFwiXCIsXG5cdC8vICAgc2V4ID0gXCJcIjtcblxuXHRleHBvcnQgbGV0IGNvbnRpbnVvdXNFbXBsb3ltZW50ID0gXCJcIixcblx0ICBlZHVjYXRpb25EZWdyZWUgPSBcIlwiLFxuXHQgIHBsYWNlT2ZFbXBsb3ltZW50ID0gXCJcIixcblx0ICBnb2FsID0ge1xuXHQgICAgdGV4dDogXCJcIixcblx0ICAgIHR5cGU6IFwiXCIsXG5cdCAgICBjb2FzdFN0dWRlbnRQbGFjZTogXCJcIixcblx0ICAgIGNvYXN0VGVhY2hlclBsYWNlOiBcIlwiLFxuXHQgICAgY29hc3RSZW1vdGU6IFwiXCJcblx0ICB9LFxuXHQgIHBlcnNvbmFsSW5mbyA9IHtcblx0ICAgIGlkOiBcIlwiLFxuXHQgICAgZGF0ZU9mQmlydGg6IFwiXCIsXG5cdCAgICBzdGF0dXM6IFwiXCIsXG5cdCAgICBzZXg6IFwiXCIsXG5cdCAgICBleHBlcmllbmNlOiBcIlwiLFxuXHQgICAgLy8gQXV0b21hdGUgZ2VuZXJhdG9yXG5cdCAgICBvdGhlckluZm86IFwiXCIsXG5cdCAgICBmaXJzdE5hbWU6IFwiXCIsXG5cdCAgICBsYXN0TmFtZTogXCJcIixcblx0ICAgIG1pZGRsZU5hbWU6IFwiXCIsXG5cdCAgICBhdmF0YXJQYXRoOiBcIlwiLFxuXHQgICAgY2l0eTogXCJcIixcblx0ICAgIHN0cmVldE5hbWU6IFwiXCIsXG5cdCAgICBjb3VudHJ5OiBcIlwiXG5cdCAgfSxcblx0ICBjb250YWN0cyA9IHtcblx0ICAgIGVtYWlsOiBcIlwiLFxuXHQgICAgcGhvbmU6IFwiXCJcblx0ICAgIC8vIHByb2ZpbGVGYWNlYm9vazogJycsXG5cdCAgICAvLyBwcm9maWxlVHdpdHRlcjogJydcblx0ICB9LFxuXHQgIHJldmlld3MgPSBbXG5cdCAgICB7XG5cdCAgICAgIG5hbWVBdXRob3I6IFwiXCIsXG5cdCAgICAgIHRleHQ6IFwiXCJcblx0ICAgIH1cblx0ICBdO1xuPC9zY3JpcHQ+XG5cbjxzdHlsZT5cblx0ZGl2IHtcblx0ICB3aWR0aDogMTUwcHg7XG5cdCAgZmxvYXQ6IGxlZnQ7XG5cdCAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmF5O1xuXHQgIGJvcmRlci1yYWRpdXM6IDNweDtcblx0ICBwYWRkaW5nOiAwIDEwcHg7XG5cdCAgbWFyZ2luOiAxMHB4O1xuXHR9XG48L3N0eWxlPiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE0REMsR0FBRyxjQUFDLENBQUMsQUFDSCxLQUFLLENBQUUsS0FBSyxDQUNaLEtBQUssQ0FBRSxJQUFJLENBQ1gsTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsU0FBUyxDQUMzQixhQUFhLENBQUUsR0FBRyxDQUNsQixPQUFPLENBQUUsQ0FBQyxDQUFDLElBQUksQ0FDZixNQUFNLENBQUUsSUFBSSxBQUNkLENBQUMifQ== */";
+		style.textContent = "div.svelte-ypqeir{width:150px;float:left;border:1px solid lightgray;border-radius:3px;padding:0 10px;margin:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVwZXRpdG9yQ2FyZC5zdmVsdGUiLCJzb3VyY2VzIjpbIlJlcGV0aXRvckNhcmQuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxkaXY+XG5cdDxoNT57cGVyc29uYWxJbmZvLmZpcnN0TmFtZX08L2g1PlxuXHQ8IS0tIDxiPntzdWJqZWN0fTwvYj4gLS0+XG5cdDxwPntwZXJzb25hbEluZm8ubGFzdE5hbWV9PC9wPlxuXHQ8IS0tIDxwPntwZXJzb25hbEluZm8ub3RoZXJJbmZvfTwvcD4gLS0+XG5cdDxwPntwZXJzb25hbEluZm8uc3RhdHVzfTwvcD5cblx0PHA+e3BlcnNvbmFsSW5mby5zZXh9PC9wPlxuXHQ8cD57IGdvYWwudGV4dH08L3A+XG5cdDxwPnsgZ29hbC50eXBlfTwvcD5cblx0PHA+eyBwbGFjZU9mRW1wbG95bWVudH08L3A+XG5cdDxwPntjb250YWN0cy5waG9uZX0gPC9wPlxuXG5cdDwhLS0gPGg1PntwZXJzb25hbEluZm8uZmlyc3ROYW1lfTwvaDU+XG5cdDxiPntzdWJqZWN0fTwvYj5cblx0PHA+e3BlcnNvbmFsSW5mby5zdGF0dXN9PC9wPlxuXHQ8cD57c2V4fTwvcD4gLS0+XG48L2Rpdj5cblxuPHNjcmlwdD5cblx0Ly8gZXhwb3J0IGxldCBuYW1lID0gXCJcIixcblx0Ly8gICBzdWJqZWN0ID0gXCJcIixcblx0Ly8gICBzdGF0dXMgPSBcIlwiLFxuXHQvLyAgIHNleCA9IFwiXCI7XG5cblx0ZXhwb3J0IGxldCBjb250aW51b3VzRW1wbG95bWVudCA9IFwiXCIsXG5cdCAgZWR1Y2F0aW9uRGVncmVlID0gXCJcIixcblx0ICBwbGFjZU9mRW1wbG95bWVudCA9IFwiXCIsXG5cdCAgZ29hbCA9IHtcblx0ICAgIHRleHQ6IFwiXCIsXG5cdCAgICB0eXBlOiBcIlwiLFxuXHQgICAgY29hc3RTdHVkZW50UGxhY2U6IFwiXCIsXG5cdCAgICBjb2FzdFRlYWNoZXJQbGFjZTogXCJcIixcblx0ICAgIGNvYXN0UmVtb3RlOiBcIlwiXG5cdCAgfSxcblx0ICBwZXJzb25hbEluZm8gPSB7XG5cdCAgICBpZDogXCJcIixcblx0ICAgIGRhdGVPZkJpcnRoOiBcIlwiLFxuXHQgICAgc3RhdHVzOiBcIlwiLFxuXHQgICAgc2V4OiBcIlwiLFxuXHQgICAgZXhwZXJpZW5jZTogXCJcIixcblx0ICAgIC8vIEF1dG9tYXRlIGdlbmVyYXRvclxuXHQgICAgb3RoZXJJbmZvOiBcIlwiLFxuXHQgICAgZmlyc3ROYW1lOiBcIlwiLFxuXHQgICAgbGFzdE5hbWU6IFwiXCIsXG5cdCAgICBtaWRkbGVOYW1lOiBcIlwiLFxuXHQgICAgYXZhdGFyUGF0aDogXCJcIixcblx0ICAgIGNpdHk6IFwiXCIsXG5cdCAgICBzdHJlZXROYW1lOiBcIlwiLFxuXHQgICAgY291bnRyeTogXCJcIlxuXHQgIH0sXG5cdCAgY29udGFjdHMgPSB7XG5cdCAgICBlbWFpbDogXCJcIixcblx0ICAgIHBob25lOiBcIlwiXG5cdCAgICAvLyBwcm9maWxlRmFjZWJvb2s6ICcnLFxuXHQgICAgLy8gcHJvZmlsZVR3aXR0ZXI6ICcnXG5cdCAgfSxcblx0ICByZXZpZXdzID0gW1xuXHQgICAge1xuXHQgICAgICBuYW1lQXV0aG9yOiBcIlwiLFxuXHQgICAgICB0ZXh0OiBcIlwiXG5cdCAgICB9XG5cdCAgXTtcbjwvc2NyaXB0PlxuXG48c3R5bGU+XG5cdGRpdiB7XG5cdCAgd2lkdGg6IDE1MHB4O1xuXHQgIGZsb2F0OiBsZWZ0O1xuXHQgIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcblx0ICBib3JkZXItcmFkaXVzOiAzcHg7XG5cdCAgcGFkZGluZzogMCAxMHB4O1xuXHQgIG1hcmdpbjogMTBweDtcblx0fVxuPC9zdHlsZT4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUVDLEdBQUcsY0FBQyxDQUFDLEFBQ0gsS0FBSyxDQUFFLEtBQUssQ0FDWixLQUFLLENBQUUsSUFBSSxDQUNYLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLFNBQVMsQ0FDM0IsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsT0FBTyxDQUFFLENBQUMsQ0FBQyxJQUFJLENBQ2YsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDIn0= */";
 		append(document.head, style);
 	}
 
 	function create_fragment(ctx) {
-		var div, h5, t0_value = ctx.personalInfo.firstName, t0, t1, p0, t2_value = ctx.personalInfo.status, t2, t3, p1, t4_value = ctx.personalInfo.sex, t4, t5, p2, t6_value = ctx.goal.text, t6, t7, p3, t8_value = ctx.goal.type, t8;
+		var div, h5, t0_value = ctx.personalInfo.firstName, t0, t1, p0, t2_value = ctx.personalInfo.lastName, t2, t3, p1, t4_value = ctx.personalInfo.status, t4, t5, p2, t6_value = ctx.personalInfo.sex, t6, t7, p3, t8_value = ctx.goal.text, t8, t9, p4, t10_value = ctx.goal.type, t10, t11, p5, t12, t13, p6, t14_value = ctx.contacts.phone, t14;
 
 		return {
 			c: function create() {
@@ -507,11 +507,23 @@ var app = (function () {
 				t7 = space();
 				p3 = element("p");
 				t8 = text(t8_value);
+				t9 = space();
+				p4 = element("p");
+				t10 = text(t10_value);
+				t11 = space();
+				p5 = element("p");
+				t12 = text(ctx.placeOfEmployment);
+				t13 = space();
+				p6 = element("p");
+				t14 = text(t14_value);
 				add_location(h5, file, 1, 1, 7);
 				add_location(p0, file, 3, 1, 69);
-				add_location(p1, file, 4, 1, 99);
-				add_location(p2, file, 5, 1, 126);
-				add_location(p3, file, 6, 1, 147);
+				add_location(p1, file, 5, 1, 143);
+				add_location(p2, file, 6, 1, 173);
+				add_location(p3, file, 7, 1, 200);
+				add_location(p4, file, 8, 1, 221);
+				add_location(p5, file, 9, 1, 242);
+				add_location(p6, file, 10, 1, 271);
 				div.className = "svelte-ypqeir";
 				add_location(div, file, 0, 0, 0);
 			},
@@ -536,6 +548,15 @@ var app = (function () {
 				append(div, t7);
 				append(div, p3);
 				append(p3, t8);
+				append(div, t9);
+				append(div, p4);
+				append(p4, t10);
+				append(div, t11);
+				append(div, p5);
+				append(p5, t12);
+				append(div, t13);
+				append(div, p6);
+				append(p6, t14);
 			},
 
 			p: function update(changed, ctx) {
@@ -543,20 +564,32 @@ var app = (function () {
 					set_data(t0, t0_value);
 				}
 
-				if ((changed.personalInfo) && t2_value !== (t2_value = ctx.personalInfo.status)) {
+				if ((changed.personalInfo) && t2_value !== (t2_value = ctx.personalInfo.lastName)) {
 					set_data(t2, t2_value);
 				}
 
-				if ((changed.personalInfo) && t4_value !== (t4_value = ctx.personalInfo.sex)) {
+				if ((changed.personalInfo) && t4_value !== (t4_value = ctx.personalInfo.status)) {
 					set_data(t4, t4_value);
 				}
 
-				if ((changed.goal) && t6_value !== (t6_value = ctx.goal.text)) {
+				if ((changed.personalInfo) && t6_value !== (t6_value = ctx.personalInfo.sex)) {
 					set_data(t6, t6_value);
 				}
 
-				if ((changed.goal) && t8_value !== (t8_value = ctx.goal.type)) {
+				if ((changed.goal) && t8_value !== (t8_value = ctx.goal.text)) {
 					set_data(t8, t8_value);
+				}
+
+				if ((changed.goal) && t10_value !== (t10_value = ctx.goal.type)) {
+					set_data(t10, t10_value);
+				}
+
+				if (changed.placeOfEmployment) {
+					set_data(t12, ctx.placeOfEmployment);
+				}
+
+				if ((changed.contacts) && t14_value !== (t14_value = ctx.contacts.phone)) {
+					set_data(t14, t14_value);
 				}
 			},
 
@@ -728,8 +761,6 @@ var app = (function () {
 	  typeEmployment = ['Індывідуальна', 'У групе'],
 	  statuses = ['Прыватны выкладнік', 'Доктар навук', 'Школьны настаўнік', 'Выкладнік коледжа', 'Выкладнік ВНУ', 'Навуковы супрацоўнік', 'Студэнт'];
 
-	/* src/components/filters/ContinuousEmployment.svelte generated by Svelte v3.0.0-beta.21 */
-
 	/* src/components/filters/SexTeacher.svelte generated by Svelte v3.0.0-beta.21 */
 
 	const file$1 = "src/components/filters/SexTeacher.svelte";
@@ -741,43 +772,43 @@ var app = (function () {
 		return child_ctx;
 	}
 
-	// (3:1) {#each sexes as sx, i}
+	// (3:0) {#each sexes as sx, i}
 	function create_each_block(ctx) {
-		var div, input, input_value_value, t0, label, t1_value = ctx.sx, t1, t2, dispose;
+		var label, t0_value = ctx.sx, t0, t1, input, input_value_value, t2, div, t3, dispose;
 
 		return {
 			c: function create() {
-				div = element("div");
-				input = element("input");
-				t0 = space();
 				label = element("label");
-				t1 = text(t1_value);
+				t0 = text(t0_value);
+				t1 = space();
+				input = element("input");
 				t2 = space();
+				div = element("div");
+				t3 = space();
 				ctx.$$binding_groups[0].push(input);
 				input.__value = input_value_value = ctx.sx;
 				input.value = input.__value;
-				input.id = "checkbox8";
-				input.name = "keywords";
 				attr(input, "type", "checkbox");
-				add_location(input, file$1, 4, 2, 110);
-				label.className = "text-gray";
-				label.htmlFor = "checkbox8";
-				add_location(label, file$1, 5, 2, 195);
-				div.className = "checkbox";
-				add_location(div, file$1, 3, 1, 85);
+				input.checked = "checked";
+				add_location(input, file$1, 4, 1, 115);
+				div.className = "control__indicator";
+				add_location(div, file$1, 5, 1, 188);
+				label.className = "control control--checkbox";
+				add_location(label, file$1, 3, 0, 68);
 				dispose = listen(input, "change", ctx.input_change_handler);
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, input);
+				insert(target, label, anchor);
+				append(label, t0);
+				append(label, t1);
+				append(label, input);
 
 				input.checked = ~ctx.sex.indexOf(input.__value);
 
-				append(div, t0);
-				append(div, label);
-				append(label, t1);
-				append(div, t2);
+				append(label, t2);
+				append(label, div);
+				append(label, t3);
 			},
 
 			p: function update(changed, ctx) {
@@ -787,7 +818,7 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(label);
 				}
 
 				ctx.$$binding_groups[0].splice(ctx.$$binding_groups[0].indexOf(input), 1);
@@ -797,7 +828,7 @@ var app = (function () {
 	}
 
 	function create_fragment$1(ctx) {
-		var div, h6, t_1;
+		var h3, t_1, each_1_anchor;
 
 		var each_value = sexes;
 
@@ -809,17 +840,17 @@ var app = (function () {
 
 		return {
 			c: function create() {
-				div = element("div");
-				h6 = element("h6");
-				h6.textContent = "Пол преподователя:";
+				h3 = element("h3");
+				h3.textContent = "Пол преподователя:";
 				t_1 = space();
 
 				for (var i = 0; i < each_blocks.length; i += 1) {
 					each_blocks[i].c();
 				}
-				add_location(h6, file$1, 1, 1, 32);
-				div.className = "checkboxes-block";
-				add_location(div, file$1, 0, 0, 0);
+
+				each_1_anchor = empty();
+				h3.className = "text-sm";
+				add_location(h3, file$1, 0, 0, 0);
 			},
 
 			l: function claim(nodes) {
@@ -827,13 +858,14 @@ var app = (function () {
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, h6);
-				append(div, t_1);
+				insert(target, h3, anchor);
+				insert(target, t_1, anchor);
 
 				for (var i = 0; i < each_blocks.length; i += 1) {
-					each_blocks[i].m(div, null);
+					each_blocks[i].m(target, anchor);
 				}
+
+				insert(target, each_1_anchor, anchor);
 			},
 
 			p: function update(changed, ctx) {
@@ -848,7 +880,7 @@ var app = (function () {
 						} else {
 							each_blocks[i] = create_each_block(child_ctx);
 							each_blocks[i].c();
-							each_blocks[i].m(div, null);
+							each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
 						}
 					}
 
@@ -864,10 +896,15 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(h3);
+					detach(t_1);
 				}
 
 				destroy_each(each_blocks, detaching);
+
+				if (detaching) {
+					detach(each_1_anchor);
+				}
 			}
 		};
 	}
@@ -925,43 +962,43 @@ var app = (function () {
 		return child_ctx;
 	}
 
-	// (3:1) {#each statuses as st, i}
+	// (13:0) {#each statuses as st, i}
 	function create_each_block$1(ctx) {
-		var div, input, input_value_value, t0, label, t1_value = ctx.st, t1, t2, dispose;
+		var label, t0_value = ctx.st, t0, t1, input, input_value_value, t2, div, t3, dispose;
 
 		return {
 			c: function create() {
-				div = element("div");
-				input = element("input");
-				t0 = space();
 				label = element("label");
-				t1 = text(t1_value);
+				t0 = text(t0_value);
+				t1 = space();
+				input = element("input");
 				t2 = space();
+				div = element("div");
+				t3 = space();
 				ctx.$$binding_groups[0].push(input);
-				input.id = "checkbox1";
-				input.name = "keywords";
-				attr(input, "type", "checkbox");
 				input.__value = input_value_value = ctx.st;
 				input.value = input.__value;
-				add_location(input, file$2, 4, 2, 128);
-				label.className = "text-gray";
-				label.htmlFor = "checkbox1";
-				add_location(label, file$2, 5, 2, 216);
-				div.className = "checkbox";
-				add_location(div, file$2, 3, 1, 103);
+				attr(input, "type", "checkbox");
+				input.checked = "checked";
+				add_location(input, file$2, 14, 1, 421);
+				div.className = "control__indicator";
+				add_location(div, file$2, 15, 1, 497);
+				label.className = "control control--checkbox";
+				add_location(label, file$2, 13, 0, 374);
 				dispose = listen(input, "change", ctx.input_change_handler);
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, input);
+				insert(target, label, anchor);
+				append(label, t0);
+				append(label, t1);
+				append(label, input);
 
 				input.checked = ~ctx.status.indexOf(input.__value);
 
-				append(div, t0);
-				append(div, label);
-				append(label, t1);
-				append(div, t2);
+				append(label, t2);
+				append(label, div);
+				append(label, t3);
 			},
 
 			p: function update(changed, ctx) {
@@ -971,7 +1008,7 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(label);
 				}
 
 				ctx.$$binding_groups[0].splice(ctx.$$binding_groups[0].indexOf(input), 1);
@@ -981,7 +1018,7 @@ var app = (function () {
 	}
 
 	function create_fragment$2(ctx) {
-		var div, h3, t_1;
+		var h3, t_1, each_1_anchor;
 
 		var each_value = statuses;
 
@@ -993,7 +1030,6 @@ var app = (function () {
 
 		return {
 			c: function create() {
-				div = element("div");
 				h3 = element("h3");
 				h3.textContent = "Статус выкладніка";
 				t_1 = space();
@@ -1001,10 +1037,10 @@ var app = (function () {
 				for (var i = 0; i < each_blocks.length; i += 1) {
 					each_blocks[i].c();
 				}
+
+				each_1_anchor = empty();
 				h3.className = "text-sm";
-				add_location(h3, file$2, 1, 1, 32);
-				div.className = "checkboxes-block";
-				add_location(div, file$2, 0, 0, 0);
+				add_location(h3, file$2, 10, 0, 304);
 			},
 
 			l: function claim(nodes) {
@@ -1012,13 +1048,14 @@ var app = (function () {
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, h3);
-				append(div, t_1);
+				insert(target, h3, anchor);
+				insert(target, t_1, anchor);
 
 				for (var i = 0; i < each_blocks.length; i += 1) {
-					each_blocks[i].m(div, null);
+					each_blocks[i].m(target, anchor);
 				}
+
+				insert(target, each_1_anchor, anchor);
 			},
 
 			p: function update(changed, ctx) {
@@ -1033,7 +1070,7 @@ var app = (function () {
 						} else {
 							each_blocks[i] = create_each_block$1(child_ctx);
 							each_blocks[i].c();
-							each_blocks[i].m(div, null);
+							each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
 						}
 					}
 
@@ -1049,10 +1086,15 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(h3);
+					detach(t_1);
 				}
 
 				destroy_each(each_blocks, detaching);
+
+				if (detaching) {
+					detach(each_1_anchor);
+				}
 			}
 		};
 	}
@@ -1110,43 +1152,43 @@ var app = (function () {
 		return child_ctx;
 	}
 
-	// (3:1) {#each educationDegree as de, i}
+	// (2:0) {#each educationDegree as de, i}
 	function create_each_block$2(ctx) {
-		var div, input, input_value_value, t0, label, t1_value = ctx.de, t1, t2, dispose;
+		var label, t0_value = ctx.de, t0, t1, input, input_value_value, t2, div, t3, dispose;
 
 		return {
 			c: function create() {
-				div = element("div");
-				input = element("input");
-				t0 = space();
 				label = element("label");
-				t1 = text(t1_value);
+				t0 = text(t0_value);
+				t1 = space();
+				input = element("input");
 				t2 = space();
+				div = element("div");
+				t3 = space();
 				ctx.$$binding_groups[0].push(input);
 				input.__value = input_value_value = ctx.de;
 				input.value = input.__value;
-				input.id = "checkbox13";
-				input.name = "keywords";
 				attr(input, "type", "checkbox");
-				add_location(input, file$3, 4, 2, 145);
-				label.className = "text-gray";
-				label.htmlFor = "checkbox13";
-				add_location(label, file$3, 5, 2, 234);
-				div.className = "checkbox";
-				add_location(div, file$3, 3, 1, 120);
+				input.checked = "checked";
+				add_location(input, file$3, 3, 1, 133);
+				div.className = "control__indicator";
+				add_location(div, file$3, 4, 1, 209);
+				label.className = "control control--checkbox";
+				add_location(label, file$3, 2, 0, 86);
 				dispose = listen(input, "change", ctx.input_change_handler);
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, input);
+				insert(target, label, anchor);
+				append(label, t0);
+				append(label, t1);
+				append(label, input);
 
 				input.checked = ~ctx.degree.indexOf(input.__value);
 
-				append(div, t0);
-				append(div, label);
-				append(label, t1);
-				append(div, t2);
+				append(label, t2);
+				append(label, div);
+				append(label, t3);
 			},
 
 			p: function update(changed, ctx) {
@@ -1156,7 +1198,7 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(label);
 				}
 
 				ctx.$$binding_groups[0].splice(ctx.$$binding_groups[0].indexOf(input), 1);
@@ -1166,7 +1208,7 @@ var app = (function () {
 	}
 
 	function create_fragment$3(ctx) {
-		var div, h3, t_1;
+		var h3, t_1, each_1_anchor;
 
 		var each_value = educationDegree;
 
@@ -1178,7 +1220,6 @@ var app = (function () {
 
 		return {
 			c: function create() {
-				div = element("div");
 				h3 = element("h3");
 				h3.textContent = "Наяўнасць навуковай ступені";
 				t_1 = space();
@@ -1186,10 +1227,10 @@ var app = (function () {
 				for (var i = 0; i < each_blocks.length; i += 1) {
 					each_blocks[i].c();
 				}
+
+				each_1_anchor = empty();
 				h3.className = "text-sm";
-				add_location(h3, file$3, 1, 1, 32);
-				div.className = "checkboxes-block";
-				add_location(div, file$3, 0, 0, 0);
+				add_location(h3, file$3, 0, 0, 0);
 			},
 
 			l: function claim(nodes) {
@@ -1197,13 +1238,14 @@ var app = (function () {
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, h3);
-				append(div, t_1);
+				insert(target, h3, anchor);
+				insert(target, t_1, anchor);
 
 				for (var i = 0; i < each_blocks.length; i += 1) {
-					each_blocks[i].m(div, null);
+					each_blocks[i].m(target, anchor);
 				}
+
+				insert(target, each_1_anchor, anchor);
 			},
 
 			p: function update(changed, ctx) {
@@ -1218,7 +1260,7 @@ var app = (function () {
 						} else {
 							each_blocks[i] = create_each_block$2(child_ctx);
 							each_blocks[i].c();
-							each_blocks[i].m(div, null);
+							each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
 						}
 					}
 
@@ -1234,10 +1276,15 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(h3);
+					detach(t_1);
 				}
 
 				destroy_each(each_blocks, detaching);
+
+				if (detaching) {
+					detach(each_1_anchor);
+				}
 			}
 		};
 	}
@@ -1295,43 +1342,43 @@ var app = (function () {
 		return child_ctx;
 	}
 
-	// (3:1) {#each educationTeacher as er, i}
+	// (2:0) {#each educationTeacher as er, i}
 	function create_each_block$3(ctx) {
-		var div, input, input_value_value, t0, label, t1_value = ctx.er, t1, t2, dispose;
+		var label, t0_value = ctx.er, t0, t1, input, input_value_value, t2, div, t3, dispose;
 
 		return {
 			c: function create() {
-				div = element("div");
-				input = element("input");
-				t0 = space();
 				label = element("label");
-				t1 = text(t1_value);
+				t0 = text(t0_value);
+				t1 = space();
+				input = element("input");
 				t2 = space();
+				div = element("div");
+				t3 = space();
 				ctx.$$binding_groups[0].push(input);
 				input.__value = input_value_value = ctx.er;
 				input.value = input.__value;
-				input.id = "checkbox10";
-				input.name = "keywords";
 				attr(input, "type", "checkbox");
-				add_location(input, file$4, 4, 2, 139);
-				label.className = "text-gray";
-				label.htmlFor = "checkbox10";
-				add_location(label, file$4, 5, 2, 231);
-				div.className = "checkbox";
-				add_location(div, file$4, 3, 1, 114);
+				input.checked = "checked";
+				add_location(input, file$4, 3, 1, 127);
+				div.className = "control__indicator";
+				add_location(div, file$4, 4, 1, 206);
+				label.className = "control control--checkbox";
+				add_location(label, file$4, 2, 0, 80);
 				dispose = listen(input, "change", ctx.input_change_handler);
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, input);
+				insert(target, label, anchor);
+				append(label, t0);
+				append(label, t1);
+				append(label, input);
 
 				input.checked = ~ctx.education.indexOf(input.__value);
 
-				append(div, t0);
-				append(div, label);
-				append(label, t1);
-				append(div, t2);
+				append(label, t2);
+				append(label, div);
+				append(label, t3);
 			},
 
 			p: function update(changed, ctx) {
@@ -1341,7 +1388,7 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(label);
 				}
 
 				ctx.$$binding_groups[0].splice(ctx.$$binding_groups[0].indexOf(input), 1);
@@ -1351,7 +1398,7 @@ var app = (function () {
 	}
 
 	function create_fragment$4(ctx) {
-		var div, h3, t_1;
+		var h3, t_1, each_1_anchor;
 
 		var each_value = educationTeacher;
 
@@ -1363,7 +1410,6 @@ var app = (function () {
 
 		return {
 			c: function create() {
-				div = element("div");
 				h3 = element("h3");
 				h3.textContent = "Адукацыя выкладніка";
 				t_1 = space();
@@ -1371,10 +1417,10 @@ var app = (function () {
 				for (var i = 0; i < each_blocks.length; i += 1) {
 					each_blocks[i].c();
 				}
+
+				each_1_anchor = empty();
 				h3.className = "text-sm";
-				add_location(h3, file$4, 1, 1, 32);
-				div.className = "checkboxes-block";
-				add_location(div, file$4, 0, 0, 0);
+				add_location(h3, file$4, 0, 0, 0);
 			},
 
 			l: function claim(nodes) {
@@ -1382,13 +1428,14 @@ var app = (function () {
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, h3);
-				append(div, t_1);
+				insert(target, h3, anchor);
+				insert(target, t_1, anchor);
 
 				for (var i = 0; i < each_blocks.length; i += 1) {
-					each_blocks[i].m(div, null);
+					each_blocks[i].m(target, anchor);
 				}
+
+				insert(target, each_1_anchor, anchor);
 			},
 
 			p: function update(changed, ctx) {
@@ -1403,7 +1450,7 @@ var app = (function () {
 						} else {
 							each_blocks[i] = create_each_block$3(child_ctx);
 							each_blocks[i].c();
-							each_blocks[i].m(div, null);
+							each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
 						}
 					}
 
@@ -1419,10 +1466,15 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(h3);
+					detach(t_1);
 				}
 
 				destroy_each(each_blocks, detaching);
+
+				if (detaching) {
+					detach(each_1_anchor);
+				}
 			}
 		};
 	}
@@ -1480,43 +1532,43 @@ var app = (function () {
 		return child_ctx;
 	}
 
-	// (3:1) {#each goalEmployment as gl, i}
+	// (2:0) {#each goalEmployment as gl, i}
 	function create_each_block$4(ctx) {
-		var div, input, input_value_value, t0, label, t1_value = ctx.gl, t1, t2, dispose;
+		var label, t0_value = ctx.gl, t0, t1, input, input_value_value, t2, div, t3, dispose;
 
 		return {
 			c: function create() {
-				div = element("div");
-				input = element("input");
-				t0 = space();
 				label = element("label");
-				t1 = text(t1_value);
+				t0 = text(t0_value);
+				t1 = space();
+				input = element("input");
 				t2 = space();
+				div = element("div");
+				t3 = space();
 				ctx.$$binding_groups[0].push(input);
 				input.__value = input_value_value = ctx.gl;
 				input.value = input.__value;
-				input.id = "checkbox17";
-				input.name = "keywords";
 				attr(input, "type", "checkbox");
-				add_location(input, file$5, 4, 2, 129);
-				label.className = "text-gray";
-				label.htmlFor = "checkbox17";
-				add_location(label, file$5, 5, 2, 216);
-				div.className = "checkbox";
-				add_location(div, file$5, 3, 1, 104);
+				input.checked = "checked";
+				add_location(input, file$5, 3, 1, 117);
+				div.className = "control__indicator";
+				add_location(div, file$5, 4, 1, 191);
+				label.className = "control control--checkbox";
+				add_location(label, file$5, 2, 0, 70);
 				dispose = listen(input, "change", ctx.input_change_handler);
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, input);
+				insert(target, label, anchor);
+				append(label, t0);
+				append(label, t1);
+				append(label, input);
 
 				input.checked = ~ctx.goal.indexOf(input.__value);
 
-				append(div, t0);
-				append(div, label);
-				append(label, t1);
-				append(div, t2);
+				append(label, t2);
+				append(label, div);
+				append(label, t3);
 			},
 
 			p: function update(changed, ctx) {
@@ -1526,7 +1578,7 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(label);
 				}
 
 				ctx.$$binding_groups[0].splice(ctx.$$binding_groups[0].indexOf(input), 1);
@@ -1536,7 +1588,7 @@ var app = (function () {
 	}
 
 	function create_fragment$5(ctx) {
-		var div, h3, t_1;
+		var h3, t_1, each_1_anchor;
 
 		var each_value = goalEmployment;
 
@@ -1548,7 +1600,6 @@ var app = (function () {
 
 		return {
 			c: function create() {
-				div = element("div");
 				h3 = element("h3");
 				h3.textContent = "Мэта занятку";
 				t_1 = space();
@@ -1556,10 +1607,10 @@ var app = (function () {
 				for (var i = 0; i < each_blocks.length; i += 1) {
 					each_blocks[i].c();
 				}
+
+				each_1_anchor = empty();
 				h3.className = "text-sm";
-				add_location(h3, file$5, 1, 1, 32);
-				div.className = "checkboxes-block";
-				add_location(div, file$5, 0, 0, 0);
+				add_location(h3, file$5, 0, 0, 0);
 			},
 
 			l: function claim(nodes) {
@@ -1567,13 +1618,14 @@ var app = (function () {
 			},
 
 			m: function mount(target, anchor) {
-				insert(target, div, anchor);
-				append(div, h3);
-				append(div, t_1);
+				insert(target, h3, anchor);
+				insert(target, t_1, anchor);
 
 				for (var i = 0; i < each_blocks.length; i += 1) {
-					each_blocks[i].m(div, null);
+					each_blocks[i].m(target, anchor);
 				}
+
+				insert(target, each_1_anchor, anchor);
 			},
 
 			p: function update(changed, ctx) {
@@ -1588,7 +1640,7 @@ var app = (function () {
 						} else {
 							each_blocks[i] = create_each_block$4(child_ctx);
 							each_blocks[i].c();
-							each_blocks[i].m(div, null);
+							each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
 						}
 					}
 
@@ -1604,10 +1656,15 @@ var app = (function () {
 
 			d: function destroy(detaching) {
 				if (detaching) {
-					detach(div);
+					detach(h3);
+					detach(t_1);
 				}
 
 				destroy_each(each_blocks, detaching);
+
+				if (detaching) {
+					detach(each_1_anchor);
+				}
 			}
 		};
 	}
@@ -1651,6 +1708,386 @@ var app = (function () {
 
 		set goal(value) {
 			throw new Error("<GoalEmployment>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+		}
+	}
+
+	/* src/components/filters/PlaceOfEmployment.svelte generated by Svelte v3.0.0-beta.21 */
+
+	const file$6 = "src/components/filters/PlaceOfEmployment.svelte";
+
+	function get_each_context$5(ctx, list, i) {
+		const child_ctx = Object.create(ctx);
+		child_ctx.pt = list[i];
+		child_ctx.i = i;
+		return child_ctx;
+	}
+
+	// (3:0) {#each placeOfEmployment as pt, i}
+	function create_each_block$5(ctx) {
+		var label, t0_value = ctx.pt, t0, t1, input, input_value_value, t2, div, t3, dispose;
+
+		return {
+			c: function create() {
+				label = element("label");
+				t0 = text(t0_value);
+				t1 = space();
+				input = element("input");
+				t2 = space();
+				div = element("div");
+				t3 = space();
+				ctx.$$binding_groups[0].push(input);
+				input.__value = input_value_value = ctx.pt;
+				input.value = input.__value;
+				attr(input, "type", "checkbox");
+				input.checked = "checked";
+				add_location(input, file$6, 4, 1, 123);
+				div.className = "control__indicator";
+				add_location(div, file$6, 5, 1, 198);
+				label.className = "control control--checkbox";
+				add_location(label, file$6, 3, 0, 76);
+				dispose = listen(input, "change", ctx.input_change_handler);
+			},
+
+			m: function mount(target, anchor) {
+				insert(target, label, anchor);
+				append(label, t0);
+				append(label, t1);
+				append(label, input);
+
+				input.checked = ~ctx.place.indexOf(input.__value);
+
+				append(label, t2);
+				append(label, div);
+				append(label, t3);
+			},
+
+			p: function update(changed, ctx) {
+				if (changed.place) input.checked = ~ctx.place.indexOf(input.__value);
+				input.value = input.__value;
+			},
+
+			d: function destroy(detaching) {
+				if (detaching) {
+					detach(label);
+				}
+
+				ctx.$$binding_groups[0].splice(ctx.$$binding_groups[0].indexOf(input), 1);
+				dispose();
+			}
+		};
+	}
+
+	function create_fragment$6(ctx) {
+		var h3, t_1, each_1_anchor;
+
+		var each_value = placeOfEmployment;
+
+		var each_blocks = [];
+
+		for (var i = 0; i < each_value.length; i += 1) {
+			each_blocks[i] = create_each_block$5(get_each_context$5(ctx, each_value, i));
+		}
+
+		return {
+			c: function create() {
+				h3 = element("h3");
+				h3.textContent = "Месца заняткаў";
+				t_1 = space();
+
+				for (var i = 0; i < each_blocks.length; i += 1) {
+					each_blocks[i].c();
+				}
+
+				each_1_anchor = empty();
+				h3.className = "text-sm";
+				add_location(h3, file$6, 0, 0, 0);
+			},
+
+			l: function claim(nodes) {
+				throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+			},
+
+			m: function mount(target, anchor) {
+				insert(target, h3, anchor);
+				insert(target, t_1, anchor);
+
+				for (var i = 0; i < each_blocks.length; i += 1) {
+					each_blocks[i].m(target, anchor);
+				}
+
+				insert(target, each_1_anchor, anchor);
+			},
+
+			p: function update(changed, ctx) {
+				if (changed.placeOfEmployment || changed.place) {
+					each_value = placeOfEmployment;
+
+					for (var i = 0; i < each_value.length; i += 1) {
+						const child_ctx = get_each_context$5(ctx, each_value, i);
+
+						if (each_blocks[i]) {
+							each_blocks[i].p(changed, child_ctx);
+						} else {
+							each_blocks[i] = create_each_block$5(child_ctx);
+							each_blocks[i].c();
+							each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+						}
+					}
+
+					for (; i < each_blocks.length; i += 1) {
+						each_blocks[i].d(1);
+					}
+					each_blocks.length = each_value.length;
+				}
+			},
+
+			i: noop,
+			o: noop,
+
+			d: function destroy(detaching) {
+				if (detaching) {
+					detach(h3);
+					detach(t_1);
+				}
+
+				destroy_each(each_blocks, detaching);
+
+				if (detaching) {
+					detach(each_1_anchor);
+				}
+			}
+		};
+	}
+
+	function instance$6($$self, $$props, $$invalidate) {
+		let { place = [] } = $$props;
+
+		const $$binding_groups = [[]];
+
+		function input_change_handler() {
+			place = get_binding_group_value($$binding_groups[0]);
+			$$invalidate('place', place);
+		}
+
+		$$self.$set = $$props => {
+			if ('place' in $$props) $$invalidate('place', place = $$props.place);
+		};
+
+		return {
+			place,
+			input_change_handler,
+			$$binding_groups
+		};
+	}
+
+	class PlaceOfEmployment extends SvelteComponentDev {
+		constructor(options) {
+			super(options);
+			init(this, options, instance$6, create_fragment$6, safe_not_equal, ["place"]);
+
+			const { ctx } = this.$$;
+			const props = options.props || {};
+			if (ctx.place === undefined && !('place' in props)) {
+				console.warn("<PlaceOfEmployment> was created without expected prop 'place'");
+			}
+		}
+
+		get place() {
+			throw new Error("<PlaceOfEmployment>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+		}
+
+		set place(value) {
+			throw new Error("<PlaceOfEmployment>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+		}
+	}
+
+	/* src/components/filters/TypeEmployment.svelte generated by Svelte v3.0.0-beta.21 */
+
+	const file$7 = "src/components/filters/TypeEmployment.svelte";
+
+	function get_each_context$6(ctx, list, i) {
+		const child_ctx = Object.create(ctx);
+		child_ctx.tt = list[i];
+		child_ctx.i = i;
+		return child_ctx;
+	}
+
+	// (14:0) {#each typeEmployment as tt, i}
+	function create_each_block$6(ctx) {
+		var label, t0_value = ctx.tt, t0, t1, input, input_value_value, t2, div, t3, dispose;
+
+		return {
+			c: function create() {
+				label = element("label");
+				t0 = text(t0_value);
+				t1 = space();
+				input = element("input");
+				t2 = space();
+				div = element("div");
+				t3 = space();
+				ctx.$$binding_groups[0].push(input);
+				input.__value = input_value_value = ctx.tt;
+				input.value = input.__value;
+				attr(input, "type", "checkbox");
+				input.checked = "checked";
+				add_location(input, file$7, 15, 1, 420);
+				div.className = "control__indicator";
+				add_location(div, file$7, 16, 1, 494);
+				label.className = "control control--checkbox";
+				add_location(label, file$7, 14, 0, 373);
+				dispose = listen(input, "change", ctx.input_change_handler);
+			},
+
+			m: function mount(target, anchor) {
+				insert(target, label, anchor);
+				append(label, t0);
+				append(label, t1);
+				append(label, input);
+
+				input.checked = ~ctx.type.indexOf(input.__value);
+
+				append(label, t2);
+				append(label, div);
+				append(label, t3);
+			},
+
+			p: function update(changed, ctx) {
+				if (changed.type) input.checked = ~ctx.type.indexOf(input.__value);
+				input.value = input.__value;
+			},
+
+			d: function destroy(detaching) {
+				if (detaching) {
+					detach(label);
+				}
+
+				ctx.$$binding_groups[0].splice(ctx.$$binding_groups[0].indexOf(input), 1);
+				dispose();
+			}
+		};
+	}
+
+	function create_fragment$7(ctx) {
+		var h3, t_1, each_1_anchor;
+
+		var each_value = typeEmployment;
+
+		var each_blocks = [];
+
+		for (var i = 0; i < each_value.length; i += 1) {
+			each_blocks[i] = create_each_block$6(get_each_context$6(ctx, each_value, i));
+		}
+
+		return {
+			c: function create() {
+				h3 = element("h3");
+				h3.textContent = "Тып занятку";
+				t_1 = space();
+
+				for (var i = 0; i < each_blocks.length; i += 1) {
+					each_blocks[i].c();
+				}
+
+				each_1_anchor = empty();
+				h3.className = "text-sm";
+				add_location(h3, file$7, 10, 0, 302);
+			},
+
+			l: function claim(nodes) {
+				throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+			},
+
+			m: function mount(target, anchor) {
+				insert(target, h3, anchor);
+				insert(target, t_1, anchor);
+
+				for (var i = 0; i < each_blocks.length; i += 1) {
+					each_blocks[i].m(target, anchor);
+				}
+
+				insert(target, each_1_anchor, anchor);
+			},
+
+			p: function update(changed, ctx) {
+				if (changed.typeEmployment || changed.type) {
+					each_value = typeEmployment;
+
+					for (var i = 0; i < each_value.length; i += 1) {
+						const child_ctx = get_each_context$6(ctx, each_value, i);
+
+						if (each_blocks[i]) {
+							each_blocks[i].p(changed, child_ctx);
+						} else {
+							each_blocks[i] = create_each_block$6(child_ctx);
+							each_blocks[i].c();
+							each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+						}
+					}
+
+					for (; i < each_blocks.length; i += 1) {
+						each_blocks[i].d(1);
+					}
+					each_blocks.length = each_value.length;
+				}
+			},
+
+			i: noop,
+			o: noop,
+
+			d: function destroy(detaching) {
+				if (detaching) {
+					detach(h3);
+					detach(t_1);
+				}
+
+				destroy_each(each_blocks, detaching);
+
+				if (detaching) {
+					detach(each_1_anchor);
+				}
+			}
+		};
+	}
+
+	function instance$7($$self, $$props, $$invalidate) {
+		let { type = [] } = $$props;
+
+		const $$binding_groups = [[]];
+
+		function input_change_handler() {
+			type = get_binding_group_value($$binding_groups[0]);
+			$$invalidate('type', type);
+		}
+
+		$$self.$set = $$props => {
+			if ('type' in $$props) $$invalidate('type', type = $$props.type);
+		};
+
+		return {
+			type,
+			input_change_handler,
+			$$binding_groups
+		};
+	}
+
+	class TypeEmployment extends SvelteComponentDev {
+		constructor(options) {
+			super(options);
+			init(this, options, instance$7, create_fragment$7, safe_not_equal, ["type"]);
+
+			const { ctx } = this.$$;
+			const props = options.props || {};
+			if (ctx.type === undefined && !('type' in props)) {
+				console.warn("<TypeEmployment> was created without expected prop 'type'");
+			}
+		}
+
+		get type() {
+			throw new Error("<TypeEmployment>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+		}
+
+		set type(value) {
+			throw new Error("<TypeEmployment>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
 		}
 	}
 
@@ -23726,10 +24163,10 @@ var app = (function () {
 	    }),
 
 	    // Automate generator
-	    otherInfo: ru.lorem.paragraph(),
+	    otherInfo: ru.lorem.paragraphs(),
 	    firstName: 'Яугения',
 	    // firstName: faker.name.firstName(),
-	    lastName: ru.name.lastName(),
+	    lastName: 'Фокина',
 	    middleName: ru.name.findName(),
 	    avatarPath: ru.internet.avatar(),
 	    city: ru.address.city(),
@@ -23836,7 +24273,7 @@ var app = (function () {
 	    otherInfo: ru.lorem.paragraph(),
 	    firstName: 'Максiм',
 	    // firstName: faker.name.firstName(),
-	    lastName: ru.name.lastName(),
+	    lastName: 'Баранов',
 	    middleName: ru.name.findName(),
 	    avatarPath: ru.internet.avatar(),
 	    city: ru.address.city(),
@@ -23943,7 +24380,7 @@ var app = (function () {
 	    otherInfo: ru.lorem.paragraph(),
 	    firstName: 'Тарас',
 	    // firstName: faker.name.firstName(),
-	    lastName: ru.name.lastName(),
+	    lastName: 'Третьяков',
 	    middleName: ru.name.findName(),
 	    avatarPath: ru.internet.avatar(),
 	    city: ru.address.city(),
@@ -24050,7 +24487,7 @@ var app = (function () {
 	    otherInfo: ru.lorem.paragraph(),
 	    firstName: 'Михась',
 	    // firstName: faker.name.firstName(),
-	    lastName: ru.name.lastName(),
+	    lastName: 'Васильев',
 	    middleName: ru.name.findName(),
 	    avatarPath: ru.internet.avatar(),
 	    city: ru.address.city(),
@@ -24157,7 +24594,7 @@ var app = (function () {
 	    otherInfo: ru.lorem.paragraph(),
 	    firstName: 'Маша',
 	    // firstName: faker.name.firstName(),
-	    lastName: ru.name.lastName(),
+	    lastName: 'Ермакова',
 	    middleName: ru.name.findName(),
 	    avatarPath: ru.internet.avatar(),
 	    city: ru.address.city(),
@@ -24264,7 +24701,7 @@ var app = (function () {
 	    otherInfo: ru.lorem.paragraph(),
 	    firstName: 'Васiль',
 	    // firstName: faker.name.firstName(),
-	    lastName: ru.name.lastName(),
+	    lastName: 'Филиппов',
 	    middleName: ru.name.findName(),
 	    avatarPath: ru.internet.avatar(),
 	    city: ru.address.city(),
@@ -25676,9 +26113,9 @@ var app = (function () {
 			// .filter(d => !continuous.length || continuous.includes(d.continuous))
 			.filter(d => !degree.length || degree.includes(d.educationDegree))
 			.filter(d => !education.length || education.includes(d.educationalInfo))
-			.filter(d => !goal.length || goal.includes(d.goal.text));
-		// .filter(d => !type.length || type.includes(d.goal.type))
-		// .filter(d => !place.length || place.includes(d.place))
+			.filter(d => !goal.length || goal.includes(d.goal.text))
+			.filter(d => !type.length || type.includes(d.goal.type))
+			.filter(d => !place.length || place.includes(d.placeOfEmployment));
 		// .filter(d => !name.length || d.personalInfo.firstName.toLowerCase().includes(personalInfo.firstName.toLowerCase()))
 		// .filter(d => !subject.length || d.subject.toLowerCase() === subject.toLowerCase());
 		// console.log(res);
@@ -25702,23 +26139,23 @@ var app = (function () {
 
 	/* src/App.svelte generated by Svelte v3.0.0-beta.21 */
 
-	const file$6 = "src/App.svelte";
+	const file$8 = "src/App.svelte";
 
 	function add_css$1() {
 		var style = element("style");
-		style.id = 'svelte-7rz2qd-style';
-		style.textContent = "aside.svelte-7rz2qd{float:left;width:200px;border-right:1px solid gray;margin-right:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8YXNpZGU+XG5cdDxkaXYgY2xhc3M9XCJmaWx0ZXItcGFuZWwtd3JhcFwiPlxuXHRcdDwhLS0gPEZpbHRlcnMgLz4gLS0+XG5cdFx0PCEtLSA8Q29udGludW91c0VtcGxveW1lbnQgYmluZDpjb250aW51b3VzIC8+IC0tPlxuXHRcdDxTZXhUZWFjaGVyIGJpbmQ6c2V4IC8+XG5cdFx0PFN0YXR1c1RlYWNoZXIgYmluZDpzdGF0dXMgLz5cblx0XHQ8RWR1Y2F0aW9uRGVncmVlIGJpbmQ6ZGVncmVlIC8+XG5cdFx0PEVkdWNhdGlvblRlYWNoZXIgYmluZDplZHVjYXRpb24gLz5cblx0XHQ8R29hbEVtcGxveW1lbnQgYmluZDpnb2FsIC8+XG5cdFx0PCEtLSA8UGxhY2VPZkVtcGxveW1lbnQgYmluZDpwbGFjZSAvPiAtLT5cblx0XHQ8IS0tIDxUeXBlRW1wbG95bWVudCBiaW5kOnR5cGUgLz4gIC0tPlxuXHRcdDwhLS0gPEZpbHRlcnMgYmluZDpzdWJqZWN0IGJpbmQ6bmFtZSBiaW5kOnN0YXR1cyBiaW5kOnNleCAvPiAtLT5cblx0PC9kaXY+XG48L2FzaWRlPlxuXG48bWFpbj5cblx0eyNlYWNoIHJlcGV0aXRvcnMgYXMgcmVwLCBpIChyZXAucGVyc29uYWxJbmZvLmlkKX1cblx0PFJlcGV0aXRvckNhcmQgey4uLnJlcH0gLz5cblx0ezplbHNlfVxuXHQ8ZGl2Pk5vIHJlcGV0aXRvcnM8L2Rpdj5cblx0ey9lYWNofVxuPC9tYWluPlxuXG5cblxuPHNjcmlwdD5cblx0aW1wb3J0IFJlcGV0aXRvckNhcmQgZnJvbSBcIi4vY29tcG9uZW50cy9SZXBldGl0b3JDYXJkLnN2ZWx0ZVwiO1xuXHQvLyBpbXBvcnQgRmlsdGVycyBmcm9tIFwiLi9jb21wb25lbnRzL0ZpbHRlcnMuc3ZlbHRlXCI7XG5cdGltcG9ydCBDb250aW51b3VzRW1wbG95bWVudCBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvQ29udGludW91c0VtcGxveW1lbnQuc3ZlbHRlXCI7XG5cdGltcG9ydCBTZXhUZWFjaGVyIGZyb20gXCIuL2NvbXBvbmVudHMvZmlsdGVycy9TZXhUZWFjaGVyLnN2ZWx0ZVwiO1xuXHRpbXBvcnQgU3RhdHVzVGVhY2hlciBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvU3RhdHVzVGVhY2hlci5zdmVsdGVcIjtcblx0aW1wb3J0IEVkdWNhdGlvbkRlZ3JlZSBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvRWR1Y2F0aW9uRGVncmVlLnN2ZWx0ZVwiO1xuXHRpbXBvcnQgRWR1Y2F0aW9uVGVhY2hlciBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvRWR1Y2F0aW9uVGVhY2hlci5zdmVsdGVcIjtcblx0aW1wb3J0IEdvYWxFbXBsb3ltZW50IGZyb20gXCIuL2NvbXBvbmVudHMvZmlsdGVycy9Hb2FsRW1wbG95bWVudC5zdmVsdGVcIjtcblx0Ly8gaW1wb3J0IFBsYWNlT2ZFbXBsb3ltZW50IGZyb20gXCIuL2NvbXBvbmVudHMvZmlsdGVycy9QbGFjZU9mRW1wbG95bWVudC5zdmVsdGVcIjtcblx0Ly8gaW1wb3J0IFR5cGVFbXBsb3ltZW50IGZyb20gXCIuL2NvbXBvbmVudHMvZmlsdGVycy9UeXBlRW1wbG95bWVudC5zdmVsdGVcIjtcblxuXHQvLyBpbXBvcnQge1xuXHQvLyAgIHNleGVzLFxuXHQvLyAgIGVkdWNhdGlvbkRlZ3JlZSxcblx0Ly8gICBwbGFjZU9mRW1wbG95bWVudCxcblx0Ly8gICBnb2FsRW1wbG95bWVudCxcblx0Ly8gICBjb250aW51b3VzRW1wbG95bWVudCxcblx0Ly8gICB0eXBlRW1wbG95bWVudCxcblx0Ly8gICBzdGF0dXNlc1xuXHQvLyB9IGZyb20gXCIuL2RhdGEvY2hlY2tib3hBdHRyaWJ1dGVzXCI7XG5cblx0aW1wb3J0IHsgZmlsdGVyIH0gZnJvbSBcIi4vZGF0YS9kYXRhLmpzXCI7XG5cblx0bGV0IHN0YXR1cyA9IFtdLFxuXHQgIHNleCA9IFtdLFxuXHQgIGNvbnRpbnVvdXMgPSBbXSxcblx0ICBkZWdyZWUgPSBbXSxcblx0ICBlZHVjYXRpb24gPSBbXSxcblx0ICBnb2FsID0gW10sXG5cdCAgcGxhY2UgPSBbXSxcblx0ICB0eXBlID0gW10sXG5cdCAgbmFtZSA9IFwiXCIsXG5cdCAgcmVwZXRpdG9ycyA9IFtdO1xuXG5cdCQ6IHJlcGV0aXRvcnMgPSBmaWx0ZXIoe1xuXHQgIHN0YXR1cyxcblx0ICBzZXgsXG5cdCAgY29udGludW91cyxcblx0ICBkZWdyZWUsXG5cdCAgZWR1Y2F0aW9uLFxuXHQgIGdvYWwsXG5cdCAgcGxhY2UsXG5cdCAgdHlwZSxcblx0ICBuYW1lXG5cdH0pO1xuPC9zY3JpcHQ+XG5cbjxzdHlsZT5cblx0YXNpZGUge1xuXHQgIGZsb2F0OiBsZWZ0O1xuXHQgIHdpZHRoOiAyMDBweDtcblx0ICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCBncmF5O1xuXHQgIG1hcmdpbi1yaWdodDogMjBweDtcblx0fVxuPC9zdHlsZT5cblxuXG5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEwRUMsS0FBSyxjQUFDLENBQUMsQUFDTCxLQUFLLENBQUUsSUFBSSxDQUNYLEtBQUssQ0FBRSxLQUFLLENBQ1osWUFBWSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUM1QixZQUFZLENBQUUsSUFBSSxBQUNwQixDQUFDIn0= */";
+		style.id = 'svelte-fpht6l-style';
+		style.textContent = "aside.svelte-fpht6l{float:left;width:200px;border-right:1px solid gray;margin-right:20px}.control-group{display:inline-block;vertical-align:top;background:#fff;text-align:left;box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);margin:10px}.control{display:block;position:relative;padding-left:30px;margin-bottom:15px;cursor:pointer;font-size:18px}.control input{position:absolute;z-index:-1;opacity:0}.control__indicator{position:absolute;top:2px;left:0;height:20px;width:20px;background:#e6e6e6}.control--radio .control__indicator{border-radius:50%}.control:hover input ~ .control__indicator, .control\n\t\t\t\t\t\t\t\t    input:focus\n\t\t\t\t\t\t\t\t    ~ .control__indicator{background:#ccc}.control input:checked ~ .control__indicator{background:#2aa1c0}.control:hover\n\t\t\t\t\t\t\t\t    input:not([disabled]):checked\n\t\t\t\t\t\t\t\t    ~ .control__indicator, .control input:checked:focus ~ .control__indicator{background:#0e647d}.control input:disabled ~ .control__indicator{background:#e6e6e6;opacity:0.6;pointer-events:none}.control__indicator:after{content:\"\";position:absolute;display:none}.control input:checked ~ .control__indicator:after{display:block}.control--checkbox .control__indicator:after{left:8px;top:4px;width:3px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8YXNpZGU+XG5cdDxkaXYgY2xhc3M9XCJmaWx0ZXItcGFuZWwtd3JhcFwiPlxuXHRcdDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cblx0XHRcdDxkaXYgY2xhc3M9XCJjb250cm9sLWdyb3VwXCI+XG5cdFx0XHRcdDwhLS0gPEZpbHRlcnMgLz4gLS0+XG5cdFx0XHRcdDwhLS0gPENvbnRpbnVvdXNFbXBsb3ltZW50IGJpbmQ6Y29udGludW91cyAvPiAtLT5cblx0XHRcdFx0PFNleFRlYWNoZXIgYmluZDpzZXggLz5cblx0XHRcdFx0PFN0YXR1c1RlYWNoZXIgYmluZDpzdGF0dXMgLz5cblx0XHRcdFx0PEVkdWNhdGlvbkRlZ3JlZSBiaW5kOmRlZ3JlZSAvPlxuXHRcdFx0XHQ8RWR1Y2F0aW9uVGVhY2hlciBiaW5kOmVkdWNhdGlvbiAvPlxuXHRcdFx0XHQ8R29hbEVtcGxveW1lbnQgYmluZDpnb2FsIC8+XG5cdFx0XHRcdDxUeXBlRW1wbG95bWVudCBiaW5kOnR5cGUgLz5cblx0XHRcdFx0PFBsYWNlT2ZFbXBsb3ltZW50IGJpbmQ6cGxhY2UgLz5cblx0XHRcdFx0PCEtLSA8RmlsdGVycyBiaW5kOnN1YmplY3QgYmluZDpuYW1lIGJpbmQ6c3RhdHVzIGJpbmQ6c2V4IC8+IC0tPlxuXHRcdFx0PC9kaXY+XG5cdFx0PC9kaXY+XG5cdDwvZGl2PlxuPC9hc2lkZT5cblxuPG1haW4+XG5cdHsjZWFjaCByZXBldGl0b3JzIGFzIHJlcCwgaSAocmVwLnBlcnNvbmFsSW5mby5pZCl9XG5cdDxSZXBldGl0b3JDYXJkIHsuLi5yZXB9IC8+XG5cdHs6ZWxzZX1cblx0PGRpdj5ObyByZXBldGl0b3JzPC9kaXY+XG5cdHsvZWFjaH1cbjwvbWFpbj5cblxuXG5cbjxzY3JpcHQ+XG5cdGltcG9ydCBSZXBldGl0b3JDYXJkIGZyb20gXCIuL2NvbXBvbmVudHMvUmVwZXRpdG9yQ2FyZC5zdmVsdGVcIjtcblx0Ly8gaW1wb3J0IEZpbHRlcnMgZnJvbSBcIi4vY29tcG9uZW50cy9GaWx0ZXJzLnN2ZWx0ZVwiO1xuXHQvLyBpbXBvcnQgQ29udGludW91c0VtcGxveW1lbnQgZnJvbSBcIi4vY29tcG9uZW50cy9maWx0ZXJzL0NvbnRpbnVvdXNFbXBsb3ltZW50LnN2ZWx0ZVwiO1xuXHRpbXBvcnQgU2V4VGVhY2hlciBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvU2V4VGVhY2hlci5zdmVsdGVcIjtcblx0aW1wb3J0IFN0YXR1c1RlYWNoZXIgZnJvbSBcIi4vY29tcG9uZW50cy9maWx0ZXJzL1N0YXR1c1RlYWNoZXIuc3ZlbHRlXCI7XG5cdGltcG9ydCBFZHVjYXRpb25EZWdyZWUgZnJvbSBcIi4vY29tcG9uZW50cy9maWx0ZXJzL0VkdWNhdGlvbkRlZ3JlZS5zdmVsdGVcIjtcblx0aW1wb3J0IEVkdWNhdGlvblRlYWNoZXIgZnJvbSBcIi4vY29tcG9uZW50cy9maWx0ZXJzL0VkdWNhdGlvblRlYWNoZXIuc3ZlbHRlXCI7XG5cdGltcG9ydCBHb2FsRW1wbG95bWVudCBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvR29hbEVtcGxveW1lbnQuc3ZlbHRlXCI7XG5cdGltcG9ydCBQbGFjZU9mRW1wbG95bWVudCBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvUGxhY2VPZkVtcGxveW1lbnQuc3ZlbHRlXCI7XG5cdGltcG9ydCBUeXBlRW1wbG95bWVudCBmcm9tIFwiLi9jb21wb25lbnRzL2ZpbHRlcnMvVHlwZUVtcGxveW1lbnQuc3ZlbHRlXCI7XG5cblx0Ly8gaW1wb3J0IHtcblx0Ly8gICBzZXhlcyxcblx0Ly8gICBlZHVjYXRpb25EZWdyZWUsXG5cdC8vICAgcGxhY2VPZkVtcGxveW1lbnQsXG5cdC8vICAgZ29hbEVtcGxveW1lbnQsXG5cdC8vICAgY29udGludW91c0VtcGxveW1lbnQsXG5cdC8vICAgdHlwZUVtcGxveW1lbnQsXG5cdC8vICAgc3RhdHVzZXNcblx0Ly8gfSBmcm9tIFwiLi9kYXRhL2NoZWNrYm94QXR0cmlidXRlc1wiO1xuXG5cdGltcG9ydCB7IGZpbHRlciB9IGZyb20gXCIuL2RhdGEvZGF0YS5qc1wiO1xuXG5cdGxldCBzdGF0dXMgPSBbXSxcblx0ICBzZXggPSBbXSxcblx0ICBjb250aW51b3VzID0gW10sXG5cdCAgZGVncmVlID0gW10sXG5cdCAgZWR1Y2F0aW9uID0gW10sXG5cdCAgZ29hbCA9IFtdLFxuXHQgIHBsYWNlID0gW10sXG5cdCAgdHlwZSA9IFtdLFxuXHQgIG5hbWUgPSBcIlwiLFxuXHQgIHJlcGV0aXRvcnMgPSBbXTtcblxuXHQkOiByZXBldGl0b3JzID0gZmlsdGVyKHtcblx0ICBzdGF0dXMsXG5cdCAgc2V4LFxuXHQgIGNvbnRpbnVvdXMsXG5cdCAgZGVncmVlLFxuXHQgIGVkdWNhdGlvbixcblx0ICBnb2FsLFxuXHQgIHBsYWNlLFxuXHQgIHR5cGUsXG5cdCAgbmFtZVxuXHR9KTtcbjwvc2NyaXB0PlxuXG48c3R5bGU+XG5cdFx0XHRcdFx0XHRcdFx0YXNpZGUge1xuXHRcdFx0XHRcdFx0XHRcdCAgZmxvYXQ6IGxlZnQ7XG5cdFx0XHRcdFx0XHRcdFx0ICB3aWR0aDogMjAwcHg7XG5cdFx0XHRcdFx0XHRcdFx0ICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCBncmF5O1xuXHRcdFx0XHRcdFx0XHRcdCAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xuXHRcdFx0XHRcdFx0XHRcdCAgLyogYmFja2dyb3VuZC1jb2xvcjogZ3JheTsgKi9cblx0XHRcdFx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRcdFx0XHQvKiA6Z2xvYmFsKC5jb250YWluZXIpIHtcblx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdCAgd2lkdGg6IDEwMCU7XG5cdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHQgIGhlaWdodDogMTAwJTtcblx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdCAgZGlzcGxheTogZmxleDtcblx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdCAgZmxleC13cmFwOiB3cmFwO1xuXHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0ICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcblx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdCAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuXHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0fSAqL1xuXG5cdFx0XHRcdFx0XHRcdFx0Omdsb2JhbCguY29udHJvbC1ncm91cCkge1xuXHRcdFx0XHRcdFx0XHRcdCAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuXHRcdFx0XHRcdFx0XHRcdCAgdmVydGljYWwtYWxpZ246IHRvcDtcblx0XHRcdFx0XHRcdFx0XHQgIGJhY2tncm91bmQ6ICNmZmY7XG5cdFx0XHRcdFx0XHRcdFx0ICB0ZXh0LWFsaWduOiBsZWZ0O1xuXHRcdFx0XHRcdFx0XHRcdCAgYm94LXNoYWRvdzogMCAxcHggMnB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcblx0XHRcdFx0XHRcdFx0XHQgIC8qIHBhZGRpbmc6IDMwcHg7ICovXG5cdFx0XHRcdFx0XHRcdFx0ICAvKiB3aWR0aDogMjAwcHg7XG5cdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdFx0XHRcdCAgaGVpZ2h0OiAyMTBweDsgKi9cblx0XHRcdFx0XHRcdFx0XHQgIG1hcmdpbjogMTBweDtcblx0XHRcdFx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRcdFx0XHQ6Z2xvYmFsKC5jb250cm9sKSB7XG5cdFx0XHRcdFx0XHRcdFx0ICBkaXNwbGF5OiBibG9jaztcblx0XHRcdFx0XHRcdFx0XHQgIHBvc2l0aW9uOiByZWxhdGl2ZTtcblx0XHRcdFx0XHRcdFx0XHQgIHBhZGRpbmctbGVmdDogMzBweDtcblx0XHRcdFx0XHRcdFx0XHQgIG1hcmdpbi1ib3R0b206IDE1cHg7XG5cdFx0XHRcdFx0XHRcdFx0ICBjdXJzb3I6IHBvaW50ZXI7XG5cdFx0XHRcdFx0XHRcdFx0ICBmb250LXNpemU6IDE4cHg7XG5cdFx0XHRcdFx0XHRcdFx0fVxuXG5cdFx0XHRcdFx0XHRcdFx0Omdsb2JhbCguY29udHJvbCBpbnB1dCkge1xuXHRcdFx0XHRcdFx0XHRcdCAgcG9zaXRpb246IGFic29sdXRlO1xuXHRcdFx0XHRcdFx0XHRcdCAgei1pbmRleDogLTE7XG5cdFx0XHRcdFx0XHRcdFx0ICBvcGFjaXR5OiAwO1xuXHRcdFx0XHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdFx0XHRcdDpnbG9iYWwoLmNvbnRyb2xfX2luZGljYXRvcikge1xuXHRcdFx0XHRcdFx0XHRcdCAgcG9zaXRpb246IGFic29sdXRlO1xuXHRcdFx0XHRcdFx0XHRcdCAgdG9wOiAycHg7XG5cdFx0XHRcdFx0XHRcdFx0ICBsZWZ0OiAwO1xuXHRcdFx0XHRcdFx0XHRcdCAgaGVpZ2h0OiAyMHB4O1xuXHRcdFx0XHRcdFx0XHRcdCAgd2lkdGg6IDIwcHg7XG5cdFx0XHRcdFx0XHRcdFx0ICBiYWNrZ3JvdW5kOiAjZTZlNmU2O1xuXHRcdFx0XHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdFx0XHRcdDpnbG9iYWwoLmNvbnRyb2wtLXJhZGlvIC5jb250cm9sX19pbmRpY2F0b3IpIHtcblx0XHRcdFx0XHRcdFx0XHQgIGJvcmRlci1yYWRpdXM6IDUwJTtcblx0XHRcdFx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRcdFx0XHQ6Z2xvYmFsKC5jb250cm9sOmhvdmVyIGlucHV0IH4gLmNvbnRyb2xfX2luZGljYXRvciwgLmNvbnRyb2xcblx0XHRcdFx0XHRcdFx0XHQgICAgaW5wdXQ6Zm9jdXNcblx0XHRcdFx0XHRcdFx0XHQgICAgfiAuY29udHJvbF9faW5kaWNhdG9yKSB7XG5cdFx0XHRcdFx0XHRcdFx0ICBiYWNrZ3JvdW5kOiAjY2NjO1xuXHRcdFx0XHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdFx0XHRcdDpnbG9iYWwoLmNvbnRyb2wgaW5wdXQ6Y2hlY2tlZCB+IC5jb250cm9sX19pbmRpY2F0b3IpIHtcblx0XHRcdFx0XHRcdFx0XHQgIGJhY2tncm91bmQ6ICMyYWExYzA7XG5cdFx0XHRcdFx0XHRcdFx0fVxuXG5cdFx0XHRcdFx0XHRcdFx0Omdsb2JhbCguY29udHJvbDpob3ZlclxuXHRcdFx0XHRcdFx0XHRcdCAgICBpbnB1dDpub3QoW2Rpc2FibGVkXSk6Y2hlY2tlZFxuXHRcdFx0XHRcdFx0XHRcdCAgICB+IC5jb250cm9sX19pbmRpY2F0b3IsIC5jb250cm9sIGlucHV0OmNoZWNrZWQ6Zm9jdXMgfiAuY29udHJvbF9faW5kaWNhdG9yKSB7XG5cdFx0XHRcdFx0XHRcdFx0ICBiYWNrZ3JvdW5kOiAjMGU2NDdkO1xuXHRcdFx0XHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdFx0XHRcdDpnbG9iYWwoLmNvbnRyb2wgaW5wdXQ6ZGlzYWJsZWQgfiAuY29udHJvbF9faW5kaWNhdG9yKSB7XG5cdFx0XHRcdFx0XHRcdFx0ICBiYWNrZ3JvdW5kOiAjZTZlNmU2O1xuXHRcdFx0XHRcdFx0XHRcdCAgb3BhY2l0eTogMC42O1xuXHRcdFx0XHRcdFx0XHRcdCAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG5cdFx0XHRcdFx0XHRcdFx0fVxuXG5cdFx0XHRcdFx0XHRcdFx0Omdsb2JhbCguY29udHJvbF9faW5kaWNhdG9yOmFmdGVyKSB7XG5cdFx0XHRcdFx0XHRcdFx0ICBjb250ZW50OiBcIlwiO1xuXHRcdFx0XHRcdFx0XHRcdCAgcG9zaXRpb246IGFic29sdXRlO1xuXHRcdFx0XHRcdFx0XHRcdCAgZGlzcGxheTogbm9uZTtcblx0XHRcdFx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRcdFx0XHQ6Z2xvYmFsKC5jb250cm9sIGlucHV0OmNoZWNrZWQgfiAuY29udHJvbF9faW5kaWNhdG9yOmFmdGVyKSB7XG5cdFx0XHRcdFx0XHRcdFx0ICBkaXNwbGF5OiBibG9jaztcblx0XHRcdFx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRcdFx0XHQ6Z2xvYmFsKC5jb250cm9sLS1jaGVja2JveCAuY29udHJvbF9faW5kaWNhdG9yOmFmdGVyKSB7XG5cdFx0XHRcdFx0XHRcdFx0ICBsZWZ0OiA4cHg7XG5cdFx0XHRcdFx0XHRcdFx0ICB0b3A6IDRweDtcblx0XHRcdFx0XHRcdFx0XHQgIHdpZHRoOiAzcHg7XG5cdFx0XHRcdFx0XHRcdFx0ICBoZWlnaHQ6IDhweDtcblx0XHRcdFx0XHRcdFx0XHQgIGJvcmRlcjogc29saWQgI2ZmZjtcblx0XHRcdFx0XHRcdFx0XHQgIGJvcmRlci13aWR0aDogMCAycHggMnB4IDA7XG5cdFx0XHRcdFx0XHRcdFx0ICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG5cdFx0XHRcdFx0XHRcdFx0fVxuPC9zdHlsZT5cblxuXG5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4RVEsS0FBSyxjQUFDLENBQUMsQUFDTCxLQUFLLENBQUUsSUFBSSxDQUNYLEtBQUssQ0FBRSxLQUFLLENBQ1osWUFBWSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUM1QixZQUFZLENBQUUsSUFBSSxBQUVwQixDQUFDLEFBWU8sY0FBYyxBQUFFLENBQUMsQUFDdkIsT0FBTyxDQUFFLFlBQVksQ0FDckIsY0FBYyxDQUFFLEdBQUcsQ0FDbkIsVUFBVSxDQUFFLElBQUksQ0FDaEIsVUFBVSxDQUFFLElBQUksQ0FDaEIsVUFBVSxDQUFFLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBSXhDLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyxBQUVPLFFBQVEsQUFBRSxDQUFDLEFBQ2pCLE9BQU8sQ0FBRSxLQUFLLENBQ2QsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsWUFBWSxDQUFFLElBQUksQ0FDbEIsYUFBYSxDQUFFLElBQUksQ0FDbkIsTUFBTSxDQUFFLE9BQU8sQ0FDZixTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDLEFBRU8sY0FBYyxBQUFFLENBQUMsQUFDdkIsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsT0FBTyxDQUFFLEVBQUUsQ0FDWCxPQUFPLENBQUUsQ0FBQyxBQUNaLENBQUMsQUFFTyxtQkFBbUIsQUFBRSxDQUFDLEFBQzVCLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLEdBQUcsQ0FBRSxHQUFHLENBQ1IsSUFBSSxDQUFFLENBQUMsQ0FDUCxNQUFNLENBQUUsSUFBSSxDQUNaLEtBQUssQ0FBRSxJQUFJLENBQ1gsVUFBVSxDQUFFLE9BQU8sQUFDckIsQ0FBQyxBQUVPLG1DQUFtQyxBQUFFLENBQUMsQUFDNUMsYUFBYSxDQUFFLEdBQUcsQUFDcEIsQ0FBQyxBQUVPOztpQ0FFaUIsQUFBRSxDQUFDLEFBQzFCLFVBQVUsQ0FBRSxJQUFJLEFBQ2xCLENBQUMsQUFFTyw0Q0FBNEMsQUFBRSxDQUFDLEFBQ3JELFVBQVUsQ0FBRSxPQUFPLEFBQ3JCLENBQUMsQUFFTzs7cUZBRXFFLEFBQUUsQ0FBQyxBQUM5RSxVQUFVLENBQUUsT0FBTyxBQUNyQixDQUFDLEFBRU8sNkNBQTZDLEFBQUUsQ0FBQyxBQUN0RCxVQUFVLENBQUUsT0FBTyxDQUNuQixPQUFPLENBQUUsR0FBRyxDQUNaLGNBQWMsQ0FBRSxJQUFJLEFBQ3RCLENBQUMsQUFFTyx5QkFBeUIsQUFBRSxDQUFDLEFBQ2xDLE9BQU8sQ0FBRSxFQUFFLENBQ1gsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBRU8sa0RBQWtELEFBQUUsQ0FBQyxBQUMzRCxPQUFPLENBQUUsS0FBSyxBQUNoQixDQUFDLEFBRU8sNENBQTRDLEFBQUUsQ0FBQyxBQUNyRCxJQUFJLENBQUUsR0FBRyxDQUNULEdBQUcsQ0FBRSxHQUFHLENBQ1IsS0FBSyxDQUFFLEdBQUcsQ0FDVixNQUFNLENBQUUsR0FBRyxDQUNYLE1BQU0sQ0FBRSxLQUFLLENBQUMsSUFBSSxDQUNsQixZQUFZLENBQUUsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUN6QixTQUFTLENBQUUsT0FBTyxLQUFLLENBQUMsQUFDMUIsQ0FBQyJ9 */";
 		append(document.head, style);
 	}
 
-	function get_each_context$5(ctx, list, i) {
+	function get_each_context$7(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
 		child_ctx.rep = list[i];
 		child_ctx.i = i;
 		return child_ctx;
 	}
 
-	// (19:1) {:else}
+	// (23:1) {:else}
 	function create_else_block(ctx) {
 		var div;
 
@@ -25726,7 +26163,7 @@ var app = (function () {
 			c: function create() {
 				div = element("div");
 				div.textContent = "No repetitors";
-				add_location(div, file$6, 19, 1, 544);
+				add_location(div, file$8, 23, 1, 621);
 			},
 
 			m: function mount(target, anchor) {
@@ -25741,8 +26178,8 @@ var app = (function () {
 		};
 	}
 
-	// (17:1) {#each repetitors as rep, i (rep.personalInfo.id)}
-	function create_each_block$5(key_1, ctx) {
+	// (21:1) {#each repetitors as rep, i (rep.personalInfo.id)}
+	function create_each_block$7(key_1, ctx) {
 		var first, current;
 
 		var repetitorcard_spread_levels = [
@@ -25804,8 +26241,8 @@ var app = (function () {
 		};
 	}
 
-	function create_fragment$6(ctx) {
-		var aside, div, updating_sex, t0, updating_status, t1, updating_degree, t2, updating_education, t3, updating_goal, t4, main, each_blocks = [], each_1_lookup = blank_object(), current;
+	function create_fragment$8(ctx) {
+		var aside, div2, div1, div0, updating_sex, t0, updating_status, t1, updating_degree, t2, updating_education, t3, updating_goal, t4, updating_type, t5, updating_place, t6, main, each_blocks = [], each_1_lookup = blank_object(), current;
 
 		function sexteacher_sex_binding(value) {
 			if (ctx.sexteacher_sex_binding.call(null, value)) {
@@ -25889,14 +26326,48 @@ var app = (function () {
 
 		add_binding_callback(() => bind(goalemployment, 'goal', goalemployment_goal_binding));
 
+		function typeemployment_type_binding(value) {
+			if (ctx.typeemployment_type_binding.call(null, value)) {
+				updating_type = true;
+			}
+		}
+
+		let typeemployment_props = {};
+		if (ctx.type !== void 0) {
+			typeemployment_props.type = ctx.type;
+		}
+		var typeemployment = new TypeEmployment({
+			props: typeemployment_props,
+			$$inline: true
+		});
+
+		add_binding_callback(() => bind(typeemployment, 'type', typeemployment_type_binding));
+
+		function placeofemployment_place_binding(value) {
+			if (ctx.placeofemployment_place_binding.call(null, value)) {
+				updating_place = true;
+			}
+		}
+
+		let placeofemployment_props = {};
+		if (ctx.place !== void 0) {
+			placeofemployment_props.place = ctx.place;
+		}
+		var placeofemployment = new PlaceOfEmployment({
+			props: placeofemployment_props,
+			$$inline: true
+		});
+
+		add_binding_callback(() => bind(placeofemployment, 'place', placeofemployment_place_binding));
+
 		var each_value = ctx.repetitors;
 
 		const get_key = ctx => ctx.rep.personalInfo.id;
 
 		for (var i = 0; i < each_value.length; i += 1) {
-			let child_ctx = get_each_context$5(ctx, each_value, i);
+			let child_ctx = get_each_context$7(ctx, each_value, i);
 			let key = get_key(child_ctx);
-			each_blocks[i] = each_1_lookup[key] = create_each_block$5(key, child_ctx);
+			each_blocks[i] = each_1_lookup[key] = create_each_block$7(key, child_ctx);
 		}
 
 		var each_1_else = null;
@@ -25909,7 +26380,9 @@ var app = (function () {
 		return {
 			c: function create() {
 				aside = element("aside");
-				div = element("div");
+				div2 = element("div");
+				div1 = element("div");
+				div0 = element("div");
 				sexteacher.$$.fragment.c();
 				t0 = space();
 				statusteacher.$$.fragment.c();
@@ -25920,14 +26393,22 @@ var app = (function () {
 				t3 = space();
 				goalemployment.$$.fragment.c();
 				t4 = space();
+				typeemployment.$$.fragment.c();
+				t5 = space();
+				placeofemployment.$$.fragment.c();
+				t6 = space();
 				main = element("main");
 
 				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].c();
-				div.className = "filter-panel-wrap";
-				add_location(div, file$6, 1, 1, 9);
-				aside.className = "svelte-7rz2qd";
-				add_location(aside, file$6, 0, 0, 0);
-				add_location(main, file$6, 15, 0, 447);
+				div0.className = "control-group";
+				add_location(div0, file$8, 3, 3, 70);
+				div1.className = "container";
+				add_location(div1, file$8, 2, 2, 43);
+				div2.className = "filter-panel-wrap";
+				add_location(div2, file$8, 1, 1, 9);
+				aside.className = "svelte-fpht6l";
+				add_location(aside, file$8, 0, 0, 0);
+				add_location(main, file$8, 19, 0, 524);
 			},
 
 			l: function claim(nodes) {
@@ -25936,17 +26417,23 @@ var app = (function () {
 
 			m: function mount(target, anchor) {
 				insert(target, aside, anchor);
-				append(aside, div);
-				mount_component(sexteacher, div, null);
-				append(div, t0);
-				mount_component(statusteacher, div, null);
-				append(div, t1);
-				mount_component(educationdegree, div, null);
-				append(div, t2);
-				mount_component(educationteacher, div, null);
-				append(div, t3);
-				mount_component(goalemployment, div, null);
-				insert(target, t4, anchor);
+				append(aside, div2);
+				append(div2, div1);
+				append(div1, div0);
+				mount_component(sexteacher, div0, null);
+				append(div0, t0);
+				mount_component(statusteacher, div0, null);
+				append(div0, t1);
+				mount_component(educationdegree, div0, null);
+				append(div0, t2);
+				mount_component(educationteacher, div0, null);
+				append(div0, t3);
+				mount_component(goalemployment, div0, null);
+				append(div0, t4);
+				mount_component(typeemployment, div0, null);
+				append(div0, t5);
+				mount_component(placeofemployment, div0, null);
+				insert(target, t6, anchor);
 				insert(target, main, anchor);
 
 				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].m(main, null);
@@ -25994,10 +26481,24 @@ var app = (function () {
 				goalemployment.$set(goalemployment_changes);
 				updating_goal = false;
 
+				var typeemployment_changes = {};
+				if (!updating_type && changed.type) {
+					typeemployment_changes.type = ctx.type;
+				}
+				typeemployment.$set(typeemployment_changes);
+				updating_type = false;
+
+				var placeofemployment_changes = {};
+				if (!updating_place && changed.place) {
+					placeofemployment_changes.place = ctx.place;
+				}
+				placeofemployment.$set(placeofemployment_changes);
+				updating_place = false;
+
 				const each_value = ctx.repetitors;
 
 				group_outros();
-				each_blocks = update_keyed_each(each_blocks, changed, get_key, 1, ctx, each_value, each_1_lookup, main, outro_and_destroy_block, create_each_block$5, null, get_each_context$5);
+				each_blocks = update_keyed_each(each_blocks, changed, get_key, 1, ctx, each_value, each_1_lookup, main, outro_and_destroy_block, create_each_block$7, null, get_each_context$7);
 				check_outros();
 
 				if (each_value.length) {
@@ -26024,6 +26525,10 @@ var app = (function () {
 
 				goalemployment.$$.fragment.i(local);
 
+				typeemployment.$$.fragment.i(local);
+
+				placeofemployment.$$.fragment.i(local);
+
 				for (var i = 0; i < each_value.length; i += 1) each_blocks[i].i();
 
 				current = true;
@@ -26035,6 +26540,8 @@ var app = (function () {
 				educationdegree.$$.fragment.o(local);
 				educationteacher.$$.fragment.o(local);
 				goalemployment.$$.fragment.o(local);
+				typeemployment.$$.fragment.o(local);
+				placeofemployment.$$.fragment.o(local);
 
 				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].o();
 
@@ -26056,8 +26563,12 @@ var app = (function () {
 
 				goalemployment.$destroy();
 
+				typeemployment.$destroy();
+
+				placeofemployment.$destroy();
+
 				if (detaching) {
-					detach(t4);
+					detach(t6);
 					detach(main);
 				}
 
@@ -26068,7 +26579,7 @@ var app = (function () {
 		};
 	}
 
-	function instance$6($$self, $$props, $$invalidate) {
+	function instance$8($$self, $$props, $$invalidate) {
 		
 
 		let status = [],
@@ -26107,6 +26618,16 @@ var app = (function () {
 			return $$invalidate('goal', goal)
 		}
 
+		function typeemployment_type_binding(value) {
+			type = value;
+			return $$invalidate('type', type)
+		}
+
+		function placeofemployment_place_binding(value) {
+			place = value;
+			return $$invalidate('place', place)
+		}
+
 		$$self.$$.update = ($$dirty = { status: 1, sex: 1, continuous: 1, degree: 1, education: 1, goal: 1, place: 1, type: 1, name: 1 }) => {
 			if ($$dirty.status || $$dirty.sex || $$dirty.continuous || $$dirty.degree || $$dirty.education || $$dirty.goal || $$dirty.place || $$dirty.type || $$dirty.name) {
 				repetitors = filter({
@@ -26129,20 +26650,24 @@ var app = (function () {
 			degree,
 			education,
 			goal,
+			place,
+			type,
 			repetitors,
 			sexteacher_sex_binding,
 			statusteacher_status_binding,
 			educationdegree_degree_binding,
 			educationteacher_education_binding,
-			goalemployment_goal_binding
+			goalemployment_goal_binding,
+			typeemployment_type_binding,
+			placeofemployment_place_binding
 		};
 	}
 
 	class App extends SvelteComponentDev {
 		constructor(options) {
 			super(options);
-			if (!document.getElementById("svelte-7rz2qd-style")) add_css$1();
-			init(this, options, instance$6, create_fragment$6, safe_not_equal, []);
+			if (!document.getElementById("svelte-fpht6l-style")) add_css$1();
+			init(this, options, instance$8, create_fragment$8, safe_not_equal, []);
 		}
 	}
 
