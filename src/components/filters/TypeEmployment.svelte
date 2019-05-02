@@ -12,10 +12,17 @@
 
 
 {#each typeEmployment as tt, i}
-<label class="control control--checkbox">{tt}
+<!-- <label class="control control--checkbox">{tt}
 	<input bind:group={type} value={tt} type="checkbox" checked="checked" />
 	<div class="control__indicator"></div>
-</label>
+</label> -->
+
+
+<div class="checkbox">
+  <input id={600+ i} name="keywords" type="checkbox"  bind:group={type} value={tt}  >
+  <label class="text-gray" for={600+i}>{tt}</label>
+</div>
+
 {/each}
 
 
