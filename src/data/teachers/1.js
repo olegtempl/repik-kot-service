@@ -61,9 +61,11 @@ export const teacherInfo = {
 
     // Automate generator
     otherInfo: faker.lorem.paragraphs(),
-    firstName: 'Яугения',
+    firstName: 'Яугенiя',
+    img: 'https://cdn0.peopleimages.com/picture/2016/309528-fill-my-head-with-ideas-copyspace-fit_400_400.jpg',
+
     // firstName: faker.name.firstName(),
-    lastName: 'Фокина',
+    lastName: 'Фокiна',
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),

@@ -63,6 +63,7 @@ export const teacherInfo = {
     otherInfo: faker.lorem.paragraph(),
     firstName: 'Максiм',
     // firstName: faker.name.firstName(),
+    img: 'https://repetitorland.ru/assets/thumbnails/86/8663ef6d3779d87b6915c6e199f82184.png',
     lastName: 'Баранов',
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),

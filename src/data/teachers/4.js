@@ -61,9 +61,11 @@ export const teacherInfo = {
 
     // Automate generator
     otherInfo: faker.lorem.paragraph(),
-    firstName: 'Михась',
+    firstName: 'Мiхась',
     // firstName: faker.name.firstName(),
-    lastName: 'Васильев',
+    lastName: 'Васiльев',
+    img: 'https://cdn2.peopleimages.com/picture/201704/1494956-hes-there-to-guide-you-through-finding-all-the-solutions-fit_400_400.jpg',
+
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),

@@ -63,7 +63,9 @@ export const teacherInfo = {
     otherInfo: faker.lorem.paragraph(),
     firstName: 'Васiль',
     // firstName: faker.name.firstName(),
-    lastName: 'Филиппов',
+    lastName: 'Фiлiппов',
+    img: 'https://cdn0.peopleimages.com/picture/201808/1695228-the-feeling-after-receiving-that-after-interview-message-fit_400_400.jpg',
+
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),

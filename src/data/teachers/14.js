@@ -18,15 +18,25 @@ export const teacherInfo = {
   //   '',
   //   ''
   // ],
-  continuousEmployment: continuousEmployment[2],
-  educationDegree: educationDegree[1],
-  placeOfEmployment: placeOfEmployment[2],
-  educationalInfo: educationTeacher[faker.random.number({
+  continuousEmployment: continuousEmployment[faker.random.number({
     max: 3
   })],
+  educationDegree: educationDegree[faker.random.number({
+    max: 1
+  })],
+  placeOfEmployment: placeOfEmployment[faker.random.number({
+    max: 2
+  })],
+  educationalInfo: educationTeacher[faker.random.number({
+    max: 2
+  })],
   goal: {
-    text: goalEmployment[0],
-    type: typeEmployment[0],
+    text: goalEmployment[faker.random.number({
+      max: 4
+    })],
+    type: typeEmployment[faker.random.number({
+      max: 1
+    })],
     coastStudentPlace: faker.random.number({
       max: 35
     }),
@@ -40,7 +50,9 @@ export const teacherInfo = {
   personalInfo: {
     id: 14,
     dateOfBirth: faker.date.past(),
-    status: statuses[0],
+    status: statuses[faker.random.number({
+      max: 6
+    })],
     sex: sexes[0],
 
     experience: faker.random.number({
@@ -49,8 +61,11 @@ export const teacherInfo = {
 
     // Automate generator
     otherInfo: faker.lorem.paragraph(),
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
+    firstName: 'Рынат',
+    // firstName: faker.name.firstName(),
+    lastName: 'Лебедзеў',
+    img: 'https://cdn0.peopleimages.com/picture/201701/1329233-im-five-minutes-away-from-the-office-fit_400_400.jpg', //https://cdn0.peopleimages.com/picture/2016/366534-enjoying-a-lazy-sunday-afternoon-fit_400_400.jpg
+
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),

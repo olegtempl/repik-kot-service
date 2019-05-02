@@ -64,6 +64,8 @@ export const teacherInfo = {
     firstName: 'Маша',
     // firstName: faker.name.firstName(),
     lastName: 'Ермакова',
+    img: 'https://cdn0.peopleimages.com/picture/201701/1451799-beautiful-hair-blowing-free-in-the-wind-fit_400_400.jpg',
+
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),

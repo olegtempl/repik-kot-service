@@ -62,6 +62,8 @@ export const teacherInfo = {
     // Automate generator
     otherInfo: faker.lorem.paragraph(),
     firstName: 'Тарас',
+    img: 'https://cdn0.peopleimages.com/picture/201709/1588564-actions-and-words-both-speak-louder-in-business-fit_400_400.jpg',
+
     // firstName: faker.name.firstName(),
     lastName: 'Третьяков',
     middleName: faker.name.findName(),
