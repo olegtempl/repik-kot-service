@@ -33,6 +33,6 @@
     "watch": "rollup -c -w",
     "start": "serve public",
     "lint": "npm run flow",
-    "doc": "jsdoc -d ./docs/jsdoc"
+    "doc": "jsdoc src -r -c ./conf.json -d ./docs/jsdoc"
   }
 }
