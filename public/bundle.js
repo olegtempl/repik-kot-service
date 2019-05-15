@@ -26477,16 +26477,23 @@ var app = (function () {
 		return child_ctx;
 	}
 
+	function get_each_context_1(ctx, list, i) {
+		const child_ctx = Object.create(ctx);
+		child_ctx.rep = list[i];
+		child_ctx.i = i;
+		return child_ctx;
+	}
+
 	// (59:4) {:else}
-	function create_else_block(ctx) {
+	function create_else_block_1(ctx) {
 		var h2;
 
 		return {
 			c: function create() {
 				h2 = element("h2");
-				h2.textContent = "Шкадую, я не змог падабраць такога рэпетытара";
-				h2.className = "text-md text-center text-white";
-				add_location(h2, file$8, 59, 4, 1757);
+				h2.textContent = "Шкадую, я не змог падабраць такога рэпетытара сяорд топавых";
+				h2.className = "text-md text-center text-black";
+				add_location(h2, file$8, 59, 4, 1781);
 			},
 
 			m: function mount(target, anchor) {
@@ -26501,7 +26508,158 @@ var app = (function () {
 		};
 	}
 
-	// (57:4) {#each repetitors as rep, i (rep.personalInfo.id)}
+	// (56:4) {#if i     < 3}
+	function create_if_block(ctx) {
+		var current;
+
+		var repetitorcard_spread_levels = [
+			ctx.rep
+		];
+
+		let repetitorcard_props = {};
+		for (var i = 0; i < repetitorcard_spread_levels.length; i += 1) {
+			repetitorcard_props = assign(repetitorcard_props, repetitorcard_spread_levels[i]);
+		}
+		var repetitorcard = new RepetitorCard({
+			props: repetitorcard_props,
+			$$inline: true
+		});
+
+		return {
+			c: function create() {
+				repetitorcard.$$.fragment.c();
+			},
+
+			m: function mount(target, anchor) {
+				mount_component(repetitorcard, target, anchor);
+				current = true;
+			},
+
+			p: function update(changed, ctx) {
+				var repetitorcard_changes = changed.repetitors ? get_spread_update(repetitorcard_spread_levels, [
+					ctx.rep
+				]) : {};
+				repetitorcard.$set(repetitorcard_changes);
+			},
+
+			i: function intro(local) {
+				if (current) return;
+				repetitorcard.$$.fragment.i(local);
+
+				current = true;
+			},
+
+			o: function outro(local) {
+				repetitorcard.$$.fragment.o(local);
+				current = false;
+			},
+
+			d: function destroy(detaching) {
+				repetitorcard.$destroy(detaching);
+			}
+		};
+	}
+
+	// (55:4) {#each repetitors as rep, i (rep.personalInfo.id)}
+	function create_each_block_1(key_1, ctx) {
+		var first, if_block_anchor, current;
+
+		var if_block = (ctx.i
+					< 3) && create_if_block(ctx);
+
+		return {
+			key: key_1,
+
+			first: null,
+
+			c: function create() {
+				first = empty();
+				if (if_block) if_block.c();
+				if_block_anchor = empty();
+				this.first = first;
+			},
+
+			m: function mount(target, anchor) {
+				insert(target, first, anchor);
+				if (if_block) if_block.m(target, anchor);
+				insert(target, if_block_anchor, anchor);
+				current = true;
+			},
+
+			p: function update(changed, ctx) {
+				if (ctx.i
+					< 3) {
+					if (if_block) {
+						if_block.p(changed, ctx);
+						if_block.i(1);
+					} else {
+						if_block = create_if_block(ctx);
+						if_block.c();
+						if_block.i(1);
+						if_block.m(if_block_anchor.parentNode, if_block_anchor);
+					}
+				} else if (if_block) {
+					group_outros();
+					on_outro(() => {
+						if_block.d(1);
+						if_block = null;
+					});
+
+					if_block.o(1);
+					check_outros();
+				}
+			},
+
+			i: function intro(local) {
+				if (current) return;
+				if (if_block) if_block.i();
+				current = true;
+			},
+
+			o: function outro(local) {
+				if (if_block) if_block.o();
+				current = false;
+			},
+
+			d: function destroy(detaching) {
+				if (detaching) {
+					detach(first);
+				}
+
+				if (if_block) if_block.d(detaching);
+
+				if (detaching) {
+					detach(if_block_anchor);
+				}
+			}
+		};
+	}
+
+	// (86:3) {:else}
+	function create_else_block(ctx) {
+		var h2;
+
+		return {
+			c: function create() {
+				h2 = element("h2");
+				h2.textContent = "Шкадую, я не змог падабраць такога рэпетытара";
+				h2.className = "text-md text-center text-black";
+				add_location(h2, file$8, 86, 3, 2512);
+			},
+
+			m: function mount(target, anchor) {
+				insert(target, h2, anchor);
+			},
+
+			d: function destroy(detaching) {
+				if (detaching) {
+					detach(h2);
+				}
+			}
+		};
+	}
+
+	// (84:3) {#each repetitors as rep, i (rep.personalInfo.id)}
 	function create_each_block$7(key_1, ctx) {
 		var first, current;
 
@@ -26565,7 +26723,7 @@ var app = (function () {
 	}
 
 	function create_fragment$8(ctx) {
-		var link, t0, header, div3, div1, div0, t2, div2, img0, t3, div4, img1, t4, div6, div5, h20, t6, p, t8, main, div14, div8, div7, h21, t10, div13, aside, div11, h22, t12, div10, div9, updating_sex, t13, updating_status, t14, updating_degree, t15, updating_education, t16, updating_goal, t17, updating_type, t18, updating_place, t19, div12, h23, t21, each_blocks = [], each_1_lookup = blank_object(), current;
+		var link, t0, header, div3, div1, div0, t2, div2, img0, t3, div4, img1, t4, div6, div5, h20, t6, p, t8, main, div20, div8, div7, h21, t10, div13, aside, div11, h22, t12, div10, div9, updating_sex, t13, updating_status, t14, updating_degree, t15, updating_education, t16, updating_goal, t17, updating_type, t18, updating_place, t19, div12, h23, t21, each_blocks_1 = [], each0_lookup = blank_object(), t22, div18, div14, h24, t24, div17, div15, input, t25, div16, button, t27, div19, h30, t29, each_blocks = [], each1_lookup = blank_object(), t30, footer, div21, section0, h31, a0, a1, a2, t35, section1, h32, a3, a4, a5, a6, t41, section2, h33, a7, a8, a9, t46, div30, div23, div22, t48, div25, div24, t50, div27, div26, t52, div29, div28, current;
 
 		function sexteacher_sex_binding(value) {
 			if (ctx.sexteacher_sex_binding.call(null, value)) {
@@ -26683,21 +26841,38 @@ var app = (function () {
 
 		add_binding_callback(() => bind(placeofemployment, 'place', placeofemployment_place_binding));
 
-		var each_value = ctx.repetitors;
+		var each_value_1 = ctx.repetitors;
 
 		const get_key = ctx => ctx.rep.personalInfo.id;
 
-		for (var i = 0; i < each_value.length; i += 1) {
-			let child_ctx = get_each_context$7(ctx, each_value, i);
+		for (var i = 0; i < each_value_1.length; i += 1) {
+			let child_ctx = get_each_context_1(ctx, each_value_1, i);
 			let key = get_key(child_ctx);
-			each_blocks[i] = each_1_lookup[key] = create_each_block$7(key, child_ctx);
+			each_blocks_1[i] = each0_lookup[key] = create_each_block_1(key, child_ctx);
 		}
 
-		var each_1_else = null;
+		var each0_else = null;
+
+		if (!each_value_1.length) {
+			each0_else = create_else_block_1(ctx);
+			each0_else.c();
+		}
+
+		var each_value = ctx.repetitors;
+
+		const get_key_1 = ctx => ctx.rep.personalInfo.id;
+
+		for (var i = 0; i < each_value.length; i += 1) {
+			let child_ctx = get_each_context$7(ctx, each_value, i);
+			let key = get_key_1(child_ctx);
+			each_blocks[i] = each1_lookup[key] = create_each_block$7(key, child_ctx);
+		}
+
+		var each1_else = null;
 
 		if (!each_value.length) {
-			each_1_else = create_else_block(ctx);
-			each_1_else.c();
+			each1_else = create_else_block(ctx);
+			each1_else.c();
 		}
 
 		return {
@@ -26725,7 +26900,7 @@ var app = (function () {
 				p.textContent = "сэрвіс для пошуку рэпетытараў";
 				t8 = space();
 				main = element("main");
-				div14 = element("div");
+				div20 = element("div");
 				div8 = element("div");
 				div7 = element("div");
 				h21 = element("h2");
@@ -26758,7 +26933,80 @@ var app = (function () {
 				h23.textContent = "Топ 3 рэпетытараў";
 				t21 = space();
 
+				for (i = 0; i < each_blocks_1.length; i += 1) each_blocks_1[i].c();
+
+				t22 = space();
+				div18 = element("div");
+				div14 = element("div");
+				h24 = element("h2");
+				h24.textContent = "Пакінь свой email і атрымай зніжку 15%";
+				t24 = space();
+				div17 = element("div");
+				div15 = element("div");
+				input = element("input");
+				t25 = space();
+				div16 = element("div");
+				button = element("button");
+				button.textContent = "→";
+				t27 = space();
+				div19 = element("div");
+				h30 = element("h3");
+				h30.textContent = "Усе рэпетытары";
+				t29 = space();
+
 				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].c();
+
+				t30 = space();
+				footer = element("footer");
+				div21 = element("div");
+				section0 = element("section");
+				h31 = element("h3");
+				h31.textContent = "Сужба патрымкi";
+				a0 = element("a");
+				a0.textContent = "Дапамога";
+				a1 = element("a");
+				a1.textContent = "Зварот\n\t\t\t\tсродкаў";
+				a2 = element("a");
+				a2.textContent = "Бяспека";
+				t35 = space();
+				section1 = element("section");
+				h32 = element("h3");
+				h32.textContent = "Інфармацыя пра сэрвiс";
+				a3 = element("a");
+				a3.textContent = "Пра нас";
+				a4 = element("a");
+				a4.textContent = "Вакансіі";
+				a5 = element("a");
+				a5.textContent = "Артыкулы";
+				a6 = element("a");
+				a6.textContent = "Мабільны дадатак";
+				t41 = space();
+				section2 = element("section");
+				h33 = element("h3");
+				h33.textContent = "Нашi партнеры";
+				a7 = element("a");
+				a7.textContent = "bivi.by";
+				a8 = element("a");
+				a8.textContent = "bear-software.by";
+				a9 = element("a");
+				a9.textContent = "darkdev.by";
+				t46 = space();
+				div30 = element("div");
+				div23 = element("div");
+				div22 = element("div");
+				div22.textContent = "Мова: Беларуская";
+				t48 = space();
+				div25 = element("div");
+				div24 = element("div");
+				div24.textContent = "Палітыка сайта";
+				t50 = space();
+				div27 = element("div");
+				div26 = element("div");
+				div26.textContent = "Дамоўленасці";
+				t52 = space();
+				div29 = element("div");
+				div28 = element("div");
+				div28.textContent = "© 2019 Repik-kot inc.";
 				link.rel = "stylesheet";
 				link.href = "viktoriya.css";
 				add_location(link, file$8, 1, 1, 15);
@@ -26804,14 +27052,88 @@ var app = (function () {
 				add_location(div11, file$8, 35, 4, 966);
 				add_location(aside, file$8, 34, 3, 954);
 				h23.className = "text-lg text-black";
-				add_location(h23, file$8, 54, 4, 1599);
+				add_location(h23, file$8, 53, 4, 1598);
 				div12.className = "repetitors-preview";
-				add_location(div12, file$8, 53, 3, 1562);
+				add_location(div12, file$8, 52, 3, 1561);
 				div13.className = "top-repetitors-block";
 				add_location(div13, file$8, 33, 2, 916);
-				div14.className = "content";
-				add_location(div14, file$8, 27, 1, 729);
+				h24.className = "text-center text-md ";
+				add_location(h24, file$8, 70, 4, 2019);
+				div14.className = "message-text";
+				add_location(div14, file$8, 69, 3, 1988);
+				input.id = "name";
+				input.placeholder = "ВАШ ЕМЕЙЛ";
+				attr(input, "type", "text");
+				add_location(input, file$8, 74, 5, 2163);
+				div15.className = "input";
+				add_location(div15, file$8, 73, 4, 2138);
+				add_location(button, file$8, 77, 5, 2263);
+				div16.className = "button-wrap";
+				add_location(div16, file$8, 76, 4, 2232);
+				div17.className = "input-wrap";
+				add_location(div17, file$8, 72, 3, 2109);
+				div18.className = "sale-block-wrap";
+				add_location(div18, file$8, 68, 2, 1955);
+				h30.className = "text-lg text-black text-center";
+				add_location(h30, file$8, 82, 3, 2350);
+				div19.className = "repetitors-preview";
+				add_location(div19, file$8, 81, 2, 2314);
+				div20.className = "content";
+				add_location(div20, file$8, 27, 1, 729);
 				add_location(main, file$8, 25, 0, 696);
+				h31.className = "text-md text-black text-normal";
+				add_location(h31, file$8, 101, 3, 2803);
+				a0.href = "404.html";
+				add_location(a0, file$8, 101, 65, 2865);
+				a1.href = "404.html";
+				add_location(a1, file$8, 101, 96, 2896);
+				a2.href = "404.html";
+				add_location(a2, file$8, 102, 15, 2937);
+				section0.className = "container-sm";
+				add_location(section0, file$8, 100, 2, 2769);
+				h32.className = "text-md text-black text-normal";
+				add_location(h32, file$8, 105, 3, 3017);
+				a3.href = "404.html";
+				add_location(a3, file$8, 105, 72, 3086);
+				a4.href = "404.html";
+				add_location(a4, file$8, 105, 102, 3116);
+				a5.href = "404.html";
+				add_location(a5, file$8, 105, 133, 3147);
+				a6.href = "404.html";
+				add_location(a6, file$8, 106, 32, 3182);
+				section1.className = "container-sm";
+				add_location(section1, file$8, 104, 2, 2983);
+				h33.className = "text-md text-black text-normal";
+				add_location(h33, file$8, 109, 3, 3271);
+				a7.href = "404.html";
+				add_location(a7, file$8, 109, 64, 3332);
+				a8.href = "404.html";
+				add_location(a8, file$8, 109, 94, 3362);
+				a9.href = "404.html";
+				add_location(a9, file$8, 109, 133, 3401);
+				section2.className = "container-sm";
+				add_location(section2, file$8, 108, 2, 3237);
+				div21.className = "content-footer";
+				add_location(div21, file$8, 99, 1, 2738);
+				div22.className = "text-sm text-white text-normal";
+				add_location(div22, file$8, 115, 3, 3517);
+				div23.className = "wrapper-inner ";
+				add_location(div23, file$8, 114, 2, 3485);
+				div24.className = "text-sm text-white text-normal";
+				add_location(div24, file$8, 118, 3, 3627);
+				div25.className = "wrapper-inner ";
+				add_location(div25, file$8, 117, 2, 3595);
+				div26.className = "text-sm text-white text-normal";
+				add_location(div26, file$8, 121, 3, 3736);
+				div27.className = "wrapper-inner ";
+				add_location(div27, file$8, 120, 2, 3704);
+				div28.className = "text-sm text-white text-normal";
+				add_location(div28, file$8, 124, 3, 3842);
+				div29.className = "wrapper-inner ";
+				add_location(div29, file$8, 123, 2, 3810);
+				div30.className = "wrapper";
+				add_location(div30, file$8, 113, 1, 3461);
+				add_location(footer, file$8, 98, 0, 2728);
 			},
 
 			l: function claim(nodes) {
@@ -26839,12 +27161,12 @@ var app = (function () {
 				append(div5, p);
 				insert(target, t8, anchor);
 				insert(target, main, anchor);
-				append(main, div14);
-				append(div14, div8);
+				append(main, div20);
+				append(div20, div8);
 				append(div8, div7);
 				append(div7, h21);
-				append(div14, t10);
-				append(div14, div13);
+				append(div20, t10);
+				append(div20, div13);
 				append(div13, aside);
 				append(aside, div11);
 				append(div11, h22);
@@ -26869,12 +27191,68 @@ var app = (function () {
 				append(div12, h23);
 				append(div12, t21);
 
-				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].m(div12, null);
+				for (i = 0; i < each_blocks_1.length; i += 1) each_blocks_1[i].m(div12, null);
 
-				if (each_1_else) {
-					each_1_else.m(div12, null);
+				if (each0_else) {
+					each0_else.m(div12, null);
 				}
 
+				append(div20, t22);
+				append(div20, div18);
+				append(div18, div14);
+				append(div14, h24);
+				append(div18, t24);
+				append(div18, div17);
+				append(div17, div15);
+				append(div15, input);
+				append(div17, t25);
+				append(div17, div16);
+				append(div16, button);
+				append(div20, t27);
+				append(div20, div19);
+				append(div19, h30);
+				append(div19, t29);
+
+				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].m(div19, null);
+
+				if (each1_else) {
+					each1_else.m(div19, null);
+				}
+
+				insert(target, t30, anchor);
+				insert(target, footer, anchor);
+				append(footer, div21);
+				append(div21, section0);
+				append(section0, h31);
+				append(section0, a0);
+				append(section0, a1);
+				append(section0, a2);
+				append(div21, t35);
+				append(div21, section1);
+				append(section1, h32);
+				append(section1, a3);
+				append(section1, a4);
+				append(section1, a5);
+				append(section1, a6);
+				append(div21, t41);
+				append(div21, section2);
+				append(section2, h33);
+				append(section2, a7);
+				append(section2, a8);
+				append(section2, a9);
+				append(footer, t46);
+				append(footer, div30);
+				append(div30, div23);
+				append(div23, div22);
+				append(div30, t48);
+				append(div30, div25);
+				append(div25, div24);
+				append(div30, t50);
+				append(div30, div27);
+				append(div27, div26);
+				append(div30, t52);
+				append(div30, div29);
+				append(div29, div28);
 				current = true;
 			},
 
@@ -26928,21 +27306,38 @@ var app = (function () {
 				placeofemployment.$set(placeofemployment_changes);
 				updating_place = false;
 
+				const each_value_1 = ctx.repetitors;
+
+				group_outros();
+				each_blocks_1 = update_keyed_each(each_blocks_1, changed, get_key, 1, ctx, each_value_1, each0_lookup, div12, outro_and_destroy_block, create_each_block_1, null, get_each_context_1);
+				check_outros();
+
+				if (each_value_1.length) {
+					if (each0_else) {
+						each0_else.d(1);
+						each0_else = null;
+					}
+				} else if (!each0_else) {
+					each0_else = create_else_block_1(ctx);
+					each0_else.c();
+					each0_else.m(div12, null);
+				}
+
 				const each_value = ctx.repetitors;
 
 				group_outros();
-				each_blocks = update_keyed_each(each_blocks, changed, get_key, 1, ctx, each_value, each_1_lookup, div12, outro_and_destroy_block, create_each_block$7, null, get_each_context$7);
+				each_blocks = update_keyed_each(each_blocks, changed, get_key_1, 1, ctx, each_value, each1_lookup, div19, outro_and_destroy_block, create_each_block$7, null, get_each_context$7);
 				check_outros();
 
 				if (each_value.length) {
-					if (each_1_else) {
-						each_1_else.d(1);
-						each_1_else = null;
+					if (each1_else) {
+						each1_else.d(1);
+						each1_else = null;
 					}
-				} else if (!each_1_else) {
-					each_1_else = create_else_block(ctx);
-					each_1_else.c();
-					each_1_else.m(div12, null);
+				} else if (!each1_else) {
+					each1_else = create_else_block(ctx);
+					each1_else.c();
+					each1_else.m(div19, null);
 				}
 			},
 
@@ -26962,6 +27357,8 @@ var app = (function () {
 
 				placeofemployment.$$.fragment.i(local);
 
+				for (var i = 0; i < each_value_1.length; i += 1) each_blocks_1[i].i();
+
 				for (var i = 0; i < each_value.length; i += 1) each_blocks[i].i();
 
 				current = true;
@@ -26975,6 +27372,8 @@ var app = (function () {
 				goalemployment.$$.fragment.o(local);
 				typeemployment.$$.fragment.o(local);
 				placeofemployment.$$.fragment.o(local);
+
+				for (i = 0; i < each_blocks_1.length; i += 1) each_blocks_1[i].o();
 
 				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].o();
 
@@ -27005,9 +27404,18 @@ var app = (function () {
 
 				placeofemployment.$destroy();
 
+				for (i = 0; i < each_blocks_1.length; i += 1) each_blocks_1[i].d();
+
+				if (each0_else) each0_else.d();
+
 				for (i = 0; i < each_blocks.length; i += 1) each_blocks[i].d();
 
-				if (each_1_else) each_1_else.d();
+				if (each1_else) each1_else.d();
+
+				if (detaching) {
+					detach(t30);
+					detach(footer);
+				}
 			}
 		};
 	}
