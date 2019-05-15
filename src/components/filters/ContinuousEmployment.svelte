@@ -9,9 +9,9 @@
 
 
 <script>
-		import { continuousEmployment } from "./../../data/checkboxAttributes";
+ import { continuousEmployment } from "./../../data/checkboxAttributes";
 
-		export let continuous = [];
+ export let continuous = [];
 </script>
 
 <style>

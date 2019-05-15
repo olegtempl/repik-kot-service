@@ -1,20 +1,37 @@
-<div>
-	<h5>{personalInfo.firstName}</h5>
-	<!-- <b>{subject}</b> -->
-	<p>{personalInfo.lastName}</p>
-	<!-- <p>{personalInfo.otherInfo}</p> -->
-	<p>{personalInfo.status}</p>
-	<p>{personalInfo.sex}</p>
-	<p>{ goal.text}</p>
-	<p>{ goal.type}</p>
-	<p>{ placeOfEmployment}</p>
-	<p>{contacts.phone} </p>
-
-	<!-- <h5>{personalInfo.firstName}</h5>
-	<b>{subject}</b>
-	<p>{personalInfo.status}</p>
-	<p>{sex}</p> -->
+<div class="repetitor-wrap">
+  <div class="avatar-wrap" style="background: url({personalInfo.img}) no-repeat center center;
+  background-size: cover;" srcset=""></div>
+  <div class="repetitor-info-wrap">
+    <h3 class="text-md text-white">{personalInfo.firstName} {personalInfo.lastName}</h3>
+    <div class="info-about-repetitor">
+      <div class="goal">
+        <p>Мэта:</p><span class="text-primary">{ goal.text}</span>
+        <p>Прадметы:</p><span class="text-primary">Ангельская мова</span>
+        <p>Тып занятку:</p><span class="text-primary">{goal.type}</span>
+             </div>
+              <div class="classes">
+        <h4 class="text-sm text-white">Кошт занятку</h4>
+        <div class="spaces-wrap">
+          <div class="space"><span class="text-xs">У вучня:</span>
+            <div class="coast"><span class="text-primary">15 р.</span><span>(60 мiн)</span></div>
+          </div>
+          <div class="space"><span class="text-xs">У рэпетытара:</span>
+            <div class="coast"><span class="text-primary">15 р.</span><span>(60 мiн)</span></div>
+          </div>
+          <div class="space"><span class="text-xs">Дыстанцыйна:</span>
+            <div class="coast"><span class="text-primary">15 р.</span><span>(60 мiн)</span></div>
+          </div>
+        </div>
+        <div class="buttons-panel">
+          <button class="button button-outlined">Дэталёвей ▼</button>
+          <button class="button button-primary">Звязацца</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 
 <script>
 	// export let name = "",
@@ -63,12 +80,6 @@
 </script>
 
 <style>
-	div {
-	  width: 150px;
-	  float: left;
-	  border: 1px solid lightgray;
-	  border-radius: 3px;
-	  padding: 0 10px;
-	  margin: 10px;
-	}
+
+
 </style>
