@@ -90,7 +90,21 @@ const data = [
   teacher4,
   teacher5,
   teacher6,
-  nrn
+  teacher7,
+  teacher8,
+  teacher9,
+  teacher10,
+  teacher11,
+  teacher12,
+  teacher13,
+  teacher14,
+  teacher15,
+  teacher16,
+  teacher17,
+  teacher18,
+  teacher19,
+  teacher20
+
 ];
 
 
