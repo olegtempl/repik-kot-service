@@ -50,22 +50,83 @@
 				</div>
 			</aside>
 
-
 			<div class="repetitors-preview">
 				<h2 class="text-lg text-black"> Топ 3 рэпетытараў</h2>
-
 				{#each repetitors as rep, i (rep.personalInfo.id)}
-				<RepetitorCard {...rep} />
+				{#if i
+				< 3} <RepetitorCard {...rep} />
+				{/if}
 				{:else}
-				<h2 class="text-md text-center text-white">Шкадую, я не змог падабраць такога рэпетытара</h2>
+				<h2 class="text-md text-center text-black">Шкадую, я не змог падабраць такога рэпетытара сяорд топавых</h2>
 				{/each}
-			</div>
 
+			</div>
 
 		</div>
 
+
+		<!-- Start Sales panel -->
+		<div class="sale-block-wrap">
+			<div class="message-text">
+				<h2 class="text-center text-md ">Пакінь свой email і атрымай зніжку 15%</h2>
+			</div>
+			<div class="input-wrap">
+				<div class="input">
+					<input id="name" placeholder="ВАШ ЕМЕЙЛ" type="text">
+				</div>
+				<div class="button-wrap">
+					<button>→</button>
+				</div>
+			</div>
+		</div>
+		<div class="repetitors-preview">
+			<h3 class="text-lg text-black text-center"> Усе рэпетытары</h3>
+			{#each repetitors as rep, i (rep.personalInfo.id)}
+			<RepetitorCard {...rep} />
+			{:else}
+			<h2 class="text-md text-center text-black">Шкадую, я не змог падабраць такога рэпетытара</h2>
+			{/each}
+		</div>
+		<!-- End Sales panel -->
 	</div>
+
+	<!-- 404 page -->
+	<!-- <body class="non"></body> -->
 </main>
+
+
+
+<footer>
+	<div class="content-footer">
+		<section class="container-sm">
+			<h3 class="text-md text-black text-normal">Сужба патрымкi</h3><a href="404.html">Дапамога</a><a href="404.html">Зварот
+				сродкаў</a><a href="404.html">Бяспека</a>
+		</section>
+		<section class="container-sm">
+			<h3 class="text-md text-black text-normal">Інфармацыя пра сэрвiс</h3><a href="404.html">Пра нас</a><a href="404.html">Вакансіі</a><a
+			 href="404.html">Артыкулы</a><a href="404.html">Мабільны дадатак</a>
+		</section>
+		<section class="container-sm">
+			<h3 class="text-md text-black text-normal">Нашi партнеры</h3><a href="404.html">bivi.by</a><a href="404.html">bear-software.by</a><a
+			 href="404.html">darkdev.by</a>
+		</section>
+	</div>
+	<div class="wrapper">
+		<div class="wrapper-inner ">
+			<div class="text-sm text-white text-normal">Мова: Беларуская</div>
+		</div>
+		<div class="wrapper-inner ">
+			<div class="text-sm text-white text-normal"> Палітыка сайта</div>
+		</div>
+		<div class="wrapper-inner ">
+			<div class="text-sm text-white text-normal">Дамоўленасці</div>
+		</div>
+		<div class="wrapper-inner ">
+			<div class="text-sm text-white text-normal">© 2019 Repik-kot inc.</div>
+		</div>
+	</div>
+</footer>
+
 <script>
 	// import Filters from "./components/Filters.svelte";
 	import RepetitorCard from "./components/RepetitorCard.svelte";
