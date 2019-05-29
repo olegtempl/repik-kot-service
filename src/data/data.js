@@ -1,4 +1,3 @@
-export const subjects = ['Foo', 'Bar', 'Baz'];
 // export const sexes = ['Мужчынскі', 'Жаночы'],
 // 	educationDegree = [false, true],
 // 	educationTeacher = ['Сярэднее', 'Сярэдне-адмысловае', 'Найвышэйшае'],
@@ -106,6 +105,8 @@ const data = [
   teacher20
 
 ];
+
+export const repetitorsInfo = data[0];
 
 
 export function filter ({

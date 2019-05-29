@@ -12,12 +12,6 @@ import {
 import faker from 'faker/locale/ru'
 
 export const teacherInfo = {
-  // discipline: [
-  //   '',
-  //   '',
-  //   '',
-  //   ''
-  // ],
   continuousEmployment: continuousEmployment[faker.random.number({
     max: 3
   })],
@@ -81,7 +75,22 @@ export const teacherInfo = {
   reviews: [{
     nameAuthor: faker.internet.userName(),
     text: faker.lorem.text()
-  }]
+  }],
+  price: {
+    atTheTeacher: faker.random.number({
+      min: 7,
+      max: 20
+    }),
+    atStudent: faker.random.number({
+      max: 35,
+      min: 12
+    }),
+    remotely: faker.random.number({
+      max: 25,
+      min: 7
+    }),
+  },
+  discipline: "Ангельская мова"
 
   // educationalInfo: [{
   //     place: '',
