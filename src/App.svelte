@@ -314,7 +314,7 @@
         <a href="404.html">Мабільны дадатак</a>
       </section>
       <section class="container-sm">
-        <h3 class="text-md text-black text-normal">Нашi партнеры</h3>
+        <h3 class="text-md text-black text-normal">Нашы партнёры</h3>
         <a href="404.html">bivi.by</a>
         <a href="404.html">bear-software.by</a>
         <a href="404.html">darkdev.by</a>
