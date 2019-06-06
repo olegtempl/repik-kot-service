@@ -69,7 +69,7 @@ export const teacherInfo = {
     middleName: faker.name.findName(),
     avatarPath: faker.internet.avatar(),
     city: faker.address.city(),
-    streetName: faker.address.streetName(),
+    streetName: "Заречный 2-й переулок",
     country: faker.address.country()
   },
   contacts: {
