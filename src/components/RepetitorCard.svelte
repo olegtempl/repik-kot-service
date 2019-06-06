@@ -75,18 +75,39 @@
     background-size: 3.2em;"
     srcset="" />
   <div class="repetitor-info-wrap">
-    <h3 class="text-md text-white">
-       {personalInfo.firstName} {personalInfo.lastName}
-    </h3>
+    {#if !aboutRepikVisible}
+      <h3 class="text-md text-white">
+         {personalInfo.firstName} {personalInfo.lastName}
+      </h3>
+    {/if}
+
     <div class="info-about-repetitor">
-      <div class="goal">
-        <p>Мэта:</p>
-        <span class="text-primary">{goal.text}</span>
-        <p>Прадметы:</p>
-        <span class="text-primary">{discipline}</span>
-        <p>Тып занятку:</p>
-        <span class="text-primary">{goal.type}</span>
-      </div>
+      {#if aboutRepikVisible}
+        <!-- <div class="background-success" transition:fade> -->
+        <p>
+          Досвед працы па прадмеце:
+          <span class="text-primary">{personalInfo.experience} год</span>
+        </p>
+        <!-- <p>Горад месцазнаходжання: г.{personalInfo.city}</p> -->
+        <p>
+          Вуліца месцазнаходжання:
+          <span class="text-primary"> {personalInfo.streetName} </span>
+        </p>
+        <!-- <p>{personalInfo.country}</p> -->
+        <p>Дадатковая інфармацыя: {personalInfo.otherInfo}</p>
+        <!-- <p>{personalInfo.}</p> -->
+        <!-- </div> -->
+      {/if}
+      {#if !aboutRepikVisible}
+        <div class="goal">
+          <p>Мэта:</p>
+          <span class="text-primary">{goal.text}</span>
+          <p>Прадметы:</p>
+          <span class="text-primary">{discipline}</span>
+          <p>Тып занятку:</p>
+          <span class="text-primary">{goal.type}</span>
+        </div>
+      {/if}
       <div class="classes">
         {#if coastVisible}
           <h4 class="text-sm text-white">Кошт занятку</h4>
@@ -116,9 +137,22 @@
         {/if}
 
         <div class="buttons-panel">
-          <button class="button button-outlined" on:click={showInfoAboutRepik}>
-            Дэталёвей ▼
-          </button>
+
+          {#if aboutRepikVisible}
+            <button
+              class="button button-outlined"
+              on:click={showInfoAboutRepik}>
+              Дэталёвей ▼
+            </button>
+          {/if}
+          {#if !aboutRepikVisible}
+            <button
+              class="button button-outlined"
+              on:click={showInfoAboutRepik}>
+              Дэталёвей ▲
+            </button>
+          {/if}
+
           <button class="button button-primary" on:click={showContactsInfo}>
             Звязацца
           </button>
@@ -129,19 +163,6 @@
             <div class="message-bar background-success" transition:fade>
               <p>Паштовая скрынка: {contacts.email}</p>
               <p>Нумар тэлефона: {contacts.phone}</p>
-            </div>
-          </div>
-        {/if}
-
-        {#if aboutRepikVisible}
-          <div class="container-md">
-            <div class="message-bar background-success" transition:fade>
-              <p>Досвед працы па прадмеце: {personalInfo.experience} год</p>
-              <p>Горад месцазнаходжання: г.{personalInfo.city}</p>
-              <p>Вуліца месцазнаходжання: вул.{personalInfo.streetName}</p>
-              <!-- <p>{personalInfo.country}</p> -->
-              <p>Дадатковая інфармацыя: {personalInfo.otherInfo}</p>
-              <!-- <p>{personalInfo.}</p> -->
             </div>
           </div>
         {/if}
