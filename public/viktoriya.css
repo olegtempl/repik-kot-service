@@ -4859,6 +4859,35 @@ header .promo-block {
   justify-content: flex-start;
 }
 
+.registration-wrap {
+  width: auto;
+  height: auto;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.error-block {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 280px;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .heading-service-wrap .heading-service {
   border: 1px solid #000000;
   color: #000000;
