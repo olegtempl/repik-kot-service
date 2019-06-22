@@ -60,7 +60,9 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: `Образование: МГУ им. М.В. Ломоносова, химический факультет, специальность – химия (1977 г.).
+    Опыт преподавания – с 2014 года (учитель химии в Долгопрудненском физико-техническом лицее им. П.Л. Капицы).
+    Опыт репетиторства – с 2004 года.`,
     firstName: 'Алёна',
     // firstName: faker.name.firstName(),
     lastName: 'Воінава',

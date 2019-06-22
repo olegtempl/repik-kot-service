@@ -60,7 +60,10 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: `Преподаватель высшей квалификации.
+    Окончила МИТХТ им. М.В. Ломоносова, квалификация – инженер, химик-технолог.
+    Звание – учитель-методист.
+    Опыт преподавательской деятельности – 20 лет.`,
     firstName: 'Максiм',
     // firstName: faker.name.firstName(),
     img: 'https://repetitorland.ru/assets/thumbnails/86/8663ef6d3779d87b6915c6e199f82184.png',

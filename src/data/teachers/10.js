@@ -60,7 +60,8 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: `МГУ им. М.В. Ломоносова, химический факультет, специальность – химия (1991 г.).
+    Репетиторская практика с 2014 года.`,
     firstName: 'Ілля',
     // firstName: faker.name.firstName(),
     lastName: 'Аліеў',

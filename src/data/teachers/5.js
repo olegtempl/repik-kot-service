@@ -60,7 +60,9 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: `Образование: окончила в 1975 году биолого-географический факультет Туркменского государственного университета (г. Ашхабад), специальность – химия и биология (1975 г.).
+    Преподавала в школе химию с 1975 по 2004 год.
+    Репетитор с 2004 года.`,
     firstName: 'Маша',
     // firstName: faker.name.firstName(),
     lastName: 'Ермакова',

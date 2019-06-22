@@ -60,7 +60,14 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: `Репетитор по биологии и химии.
+
+    МПГУ, кандидат биологических наук.
+    Учитель высшей квалификационной категории.
+    Автор книги «ЕГЭ по биологии. Практическая подготовка» (2013 г.).
+    Стаж педагогической деятельности – с 1996 года.
+    Опыт подготовки учеников к поступлению в ведущие ВУЗы Москвы.
+    Редактор рубрики «Биология».`,
     firstName: 'Тарас',
     img: 'https://cdn0.peopleimages.com/picture/201709/1588564-actions-and-words-both-speak-louder-in-business-fit_400_400.jpg',
 

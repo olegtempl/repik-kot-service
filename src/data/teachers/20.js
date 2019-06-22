@@ -60,7 +60,12 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: `Кандидат химических наук (2013 г.).
+    Образование: МГУ им. М.В. Ломоносова, химический факультет, квалификация – химик (диплом с отличием, 2009 г.); аспирантура (2012 г.).
+    Призёр всероссийских олимпиад по химии.
+    Опыт репетиторства – с 2006 года.
+
+    `,
     firstName: ' Карым',
     // firstName: faker.name.firstName(),
     lastName: 'Буркоў',

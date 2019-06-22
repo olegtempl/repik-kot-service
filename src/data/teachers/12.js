@@ -60,7 +60,9 @@ export const teacherInfo = {
     }),
 
     // Automate generator
-    otherInfo: faker.lorem.paragraph(),
+    otherInfo: `МГУ им. М.В. Ломоносова, химический факультет, специальность – химия (2018 г.); химический факультет, аспирантура, 1 год обучения.
+    Победитель и призер муниципальных, городских и региональных химических олимпиад.
+    Репетитор с 2012 года.`,
     firstName: 'Аляксей',
     // firstName: faker.name.firstName(),
     lastName: 'Шапашнікаў',
