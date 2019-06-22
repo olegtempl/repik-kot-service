@@ -301,7 +301,7 @@
   <footer>
     <div class="content-footer">
       <section class="container-sm">
-        <h3 class="text-md text-black text-normal">Сужба патрымкi</h3>
+        <h3 class="text-md text-black text-normal">Сужба падрымкi</h3>
         <a href="404.html">Дапамога</a>
         <a href="404.html">Зварот сродкаў</a>
         <a href="404.html">Бяспека</a>
